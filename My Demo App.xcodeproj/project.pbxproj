@@ -52,6 +52,7 @@
 		88A847DB2757BC3100B9F861 /* NavigationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A847DA2757BC3100B9F861 /* NavigationTest.swift */; };
 		88A847DD2757BD6A00B9F861 /* PageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A847DC2757BD6A00B9F861 /* PageObject.swift */; };
 		A0794204410772F608EC9A78 /* Pods_My_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA2876F17353ADA6DBFD217 /* Pods_My_Demo_App.framework */; };
+		A27E17DD27A497E0007106E9 /* BacktraceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27E17DC27A497E0007106E9 /* BacktraceWrapper.swift */; };
 		A2C826B52706268B00616582 /* MyDemoAppTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C826B42706268B00616582 /* MyDemoAppTestBase.swift */; };
 		C4513FF52759B1BA004BABDA /* TestFairyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FF42759B1BA004BABDA /* TestFairyWrapper.swift */; };
 		C4513FF72759B554004BABDA /* ReportABugDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4513FF62759B554004BABDA /* ReportABugDebugViewController.swift */; };
@@ -118,6 +119,7 @@
 		88A847D82757BB4F00B9F861 /* ProductDetailsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsTest.swift; sourceTree = "<group>"; };
 		88A847DA2757BC3100B9F861 /* NavigationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTest.swift; sourceTree = "<group>"; };
 		88A847DC2757BD6A00B9F861 /* PageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageObject.swift; sourceTree = "<group>"; };
+		A27E17DC27A497E0007106E9 /* BacktraceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktraceWrapper.swift; sourceTree = "<group>"; };
 		A2C826A82706266600616582 /* My Demo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Demo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C826AC2706266600616582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2C826B42706268B00616582 /* MyDemoAppTestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDemoAppTestBase.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				C4513FF42759B1BA004BABDA /* TestFairyWrapper.swift */,
+				A27E17DC27A497E0007106E9 /* BacktraceWrapper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				2F7BEFAC26F48C7D00457331 /* DrawingViewController.swift in Sources */,
 				2F8026B826F35900003F8272 /* ShippingAddressViewController.swift in Sources */,
 				2F8414F326FC56E7008C1FA8 /* Engine.swift in Sources */,
+				A27E17DD27A497E0007106E9 /* BacktraceWrapper.swift in Sources */,
 				2F9F23F826F72BC900E9410C /* ViewShadowTop.swift in Sources */,
 				2F5543B126F3D160008F6550 /* CheckoutCompleteViewController.swift in Sources */,
 				2F9F23FD26F72C6E00E9410C /* YPDrawSignatureView.swift in Sources */,

@@ -19,110 +19,509 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1F8CA56DDB4D3C03A8E68ADBE17E1936 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1E5271B838B2DB9FF936EA76AD4ED7 /* FormTextField.swift */; };
-		27719E1719165FEBCA7D1DAF939C9E72 /* FormTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 334C25E04496F0CF48CFECB12837FBBC /* FormTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BCB5765265D70CA24079AB63949E4D2 /* DecimalInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189DEC451880F4FA5EE91D853EF1BB46 /* DecimalInputValidator.swift */; };
-		3E4BC78628D0BAF038D6085DA3397AE5 /* InputValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D235DBC1464E1AB656028F8BE42B0 /* InputValidatable.swift */; };
-		4671398F69B53D5989414A6CEE1D8C30 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AEA6A5EB392F8F16CF07F71EDC55E /* UIKitExtensions.swift */; };
-		51C970BDD37360B18DD62D878937E81D /* FormTextFieldTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430D8A511A9CB2D156A43B47E9383A43 /* FormTextFieldTypeManager.swift */; };
-		56C63BAEB93D20A948A8F1BE1838B972 /* Pods-My Demo App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C787DA31B73DF99EA0392B99F14A6 /* Pods-My Demo App-dummy.m */; };
-		5DF05A417F536F618EF8C8BA949B4502 /* Pods-My Demo App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2006E0B0151AB539808DC899C3B5F8CE /* Pods-My Demo App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		008D62C8CADA64442E56F1E69FBD3E0A /* PLCrashMachExceptionPortSet.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1ED0FED87DF082202F856CFCBF0104 /* PLCrashMachExceptionPortSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01669AC1FFF4CF7F93C23E9E4200443B /* AttributesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545B06157B55C79AFB05198D3259B11 /* AttributesProvider.swift */; };
+		024B5CFE4EB0A7D15A5349AFEB821AAB /* PLCrashReport.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AA1FF3136D33B5648256027D22524CA /* PLCrashReport.pb-c.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		05335E3CEBC510CC8257E8DFDF76F6BF /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 1463B088A12D69FC663DBC268E808DFC /* protobuf-c.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		05F7662A894E8DC9A4C3A8466AC1F667 /* BacktraceReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C9090856A7BAECF86385A18AA9E6C /* BacktraceReporter.swift */; };
+		09F84134375DD4E3C1328B24A828EEE1 /* PLCrashReportFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C425E9859DD3A1552CCCDA5AE14FD6 /* PLCrashReportFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C8FD979DF45798D900454C8A58F8FB9 /* DefaultAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C29D7AFB5A68E355571E4541302A8 /* DefaultAttributes.swift */; };
+		0E6ED77E4282046C3D195181845A5675 /* PLCrashFrameDWARFUnwind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8105321BB069154A2AA83411BE336BD7 /* PLCrashFrameDWARFUnwind.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0E72B7692E419503CBB6CD8F036E6117 /* PLCrashAsyncMachOString.c in Sources */ = {isa = PBXBuildFile; fileRef = D75F71D22EE51376E7EBBCAC8708A8BB /* PLCrashAsyncMachOString.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0E8A5695EE0C453D6A4BEF233D83BFAC /* ReportMetadataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC086AF8A7E785341E7C736FC0BE5 /* ReportMetadataStorage.swift */; };
+		0F20A65E1CDDABBC8FEE6FFB99AE1B54 /* PLCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 693F29E38FAE370BF2B3BA6D1BD0E75A /* PLCrashReport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0FD3F448CE214B66193397143B2A3A27 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD88925A3E9ADE83E7B94E46917726D /* CrashReporter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0FD96253CEE8A86C58F19222EF2D7326 /* BacktraceReportStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C8353E9B7259DBA9B147097C33A208 /* BacktraceReportStatus.swift */; };
+		12E7F5496507526ACAE5D71A4571BDAD /* BacktraceCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42376341274AEAD2CDEBDC34C53ED898 /* BacktraceCredentials.swift */; };
+		1691267DE00D1FAB3ED0B1E72380E1CE /* PLCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E17532BA5260F5698E721AF5E04FDD3 /* PLCrashReporter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1754A7D494EFFEAAD242567267EA7D46 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74ED24601495F4399AF31319D0A01F /* Attachment.swift */; };
+		199BB6BB18A4EC98F879E4551C83DBC3 /* BacktraceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD0C01C7170EA7C326A218FD75C10A3 /* BacktraceApi.swift */; };
+		1D012242FB88D8A55D9A710608723C23 /* Backtrace-PLCrashReporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 215A779EC720E8333AE40FB116593A8A /* Backtrace-PLCrashReporter-dummy.m */; };
+		1D8B2BB28E54DBD5EBE0D5EB19A7DCA2 /* PLCrashAsyncSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3144C859897D45A758FF3B40A6C789 /* PLCrashAsyncSignalInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E7E65A3B6B39C20198077A87704D13F /* PLCrashReportSymbolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DA26929F6DFF175C4C8CE1C593241B /* PLCrashReportSymbolInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1F8CA56DDB4D3C03A8E68ADBE17E1936 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927BF378C04201EC5C3EB1C8DE2EBA9 /* FormTextField.swift */; };
+		20A02D4BAA7EFBC98C4091AF670D95BA /* PLCrashAsyncDwarfCIE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAB0AC3623EC0949B321650867C577AF /* PLCrashAsyncDwarfCIE.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		211FF14882107C3168613A2C75A4EB3D /* PLCrashReportSignalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1F4A272725621A304D03C1A33EFD2 /* PLCrashReportSignalInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		215E7C1CF00B559D3FDAF0462701D440 /* Backtrace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05726822AB9832B70D80AD2212053FC /* Backtrace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A71ED8A00C549D702DBB7B990F3B4D /* PLCrashFrameDWARFUnwind.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB9513A259E1546FBDF8B63E46162DF /* PLCrashFrameDWARFUnwind.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24504CF431C3B1847CDA09BF4D510F97 /* PLCrashAsyncThread_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 907F87B00592B70485DF9BD9062F03D3 /* PLCrashAsyncThread_x86.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		246DE00F2BDE3D46C9FBE21D5F74E63E /* CrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 00886FE68EE1054380381B24F97F31AB /* CrashReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24BA73F307BE4874F301F7D9694B11AF /* Map+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6787541958C7DF1E151D02C9F6E9D5 /* Map+KeyPath.swift */; };
+		26009CCD295B4B1B75E745F20E9107AE /* PLCrashReportStackFrameInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD438DD7465C947BF667F3928CCAD480 /* PLCrashReportStackFrameInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		27719E1719165FEBCA7D1DAF939C9E72 /* FormTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD8E9AAA5FF5CDB654A707ADF759141 /* FormTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BCB5765265D70CA24079AB63949E4D2 /* DecimalInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3016124EFF8C97B482EB24654532D2 /* DecimalInputValidator.swift */; };
+		2C626DE67EB3CDC9A63E547B3B5A34FB /* PLCrashReportProcessorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F614ED5DA57AECB69BCB594ACF3CA7B /* PLCrashReportProcessorInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2D6732245EE740C87D4DD4948F1AB110 /* mach_exc.h in Headers */ = {isa = PBXBuildFile; fileRef = 454478CF6DA70E5FFEFFE700C7660C7B /* mach_exc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F2E70A4775D69980D79A06A87A2558B /* BacktraceRateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588DEC9EB234E74BF05AF9B7184F71A /* BacktraceRateLimiter.swift */; };
+		309A4578B5BFAFB9E37FCBF80891C563 /* PLCrashAsyncLinkedList.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B8844077148F56D26570CBBAED543767 /* PLCrashAsyncLinkedList.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		318350BBBB1D2B8A8BB1B68A065B17CD /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A060F7981D383FF8A0C0F835CAA54FD /* Foundation+Extensions.swift */; };
+		32AAA3C6278A2581D4028E3DDF98454B /* CrashReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D604BC5A08442A2349168D5A0E6386 /* CrashReporting.swift */; };
+		33EBD260D7786DB80CB649A974446A2C /* PLCrashProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 325D26B392DA5E05E5E7FDE48456DA0D /* PLCrashProcessInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		38E7859B9CF47C25A276FF2DB498129D /* DebuggerChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C29912FDE86D5786C13901D1F149AD0 /* DebuggerChecker.swift */; };
+		3A51FE9C417AE2BEF364F654A6712865 /* PLCrashAsyncMachOString.h in Headers */ = {isa = PBXBuildFile; fileRef = 194E3F4C15131118D23847131A8C7BDD /* PLCrashAsyncMachOString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AFC1B6DECE59EC383CC4EFC7054879A /* PLCrashMachExceptionServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9072F2C874956EC9EC815A80ACAE96EE /* PLCrashMachExceptionServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3B9DBE51CCC421053A69A41F85CB313D /* dwarf_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E329DCE15C30F40375C81B207E545960 /* dwarf_private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E4BC78628D0BAF038D6085DA3397AE5 /* InputValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7C8F66DAFB8FBA74B3F7F42D77585 /* InputValidatable.swift */; };
+		3F38B1C42525C6E4C5FA68CCF2D8E4D1 /* BacktraceClientCustomizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38581F4ECFDCA8900005AED2E8D86B /* BacktraceClientCustomizing.swift */; };
+		3F3FEB7EF8377ABF3D473C9BE97E6C8E /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 012E4568CE8F94426B1E9F8486C43D2B /* PLCrashReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42702BB0A3EE3A5124B8F8E0963A6278 /* ReportingPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA2C749EE5BFB4F57DDEA9307EB18D /* ReportingPolicy.swift */; };
+		4671398F69B53D5989414A6CEE1D8C30 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F2160F19661555C3DF72874550ED3 /* UIKitExtensions.swift */; };
+		46BEB246EC8B5BE85F8954C59E76F8C9 /* PLCrashAsyncThread_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 473349F7BD0D319D7819B91926D0EC09 /* PLCrashAsyncThread_arm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46C632A1F374F694D996FB356216F0A4 /* MultipartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280B0EA2228E577E09A2F4018B8453F /* MultipartRequest.swift */; };
+		474E1C14A774DE5DC80B1EF7E432EF12 /* PLCrashFeatureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9CBEECFB105B5DA0F48B9C4023D088 /* PLCrashFeatureConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		478CD1720A676CE07ED18ADA0BEAC69A /* dwarf_stack.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E379D2935C2E490FEDCA6B9CEE03E046 /* dwarf_stack.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		491EBF36A921623DFA99F70BB1E01E17 /* PLCrashLogWriterEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = D545AB2AAB2FF56DB15AA0E6AA40BCE4 /* PLCrashLogWriterEncoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		49E1C37AB00D29339CFABC8012E14413 /* BacktraceDatabaseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2920C23129BB1FE5211A30F747D1207 /* BacktraceDatabaseSettings.swift */; };
+		49FC6CF454698BF60ED84C4CB80A9ABB /* PLCrashAsyncThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A684D55CC0EFAFB16DC955CE17CA9EC /* PLCrashAsyncThread.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4A3345AD2522771519DA26FA7C4E9017 /* PLCrashReportTextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBD58C704EDD1ECE32A157C513B132C /* PLCrashReportTextFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4AB2363440A2027432350EA8D8D824AA /* PLCrashAsyncCompactUnwindEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BDCB83BC65B3EE6EDCF0640C01B354 /* PLCrashAsyncCompactUnwindEncoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B906488F77ADFA2C90FB6137580F98B /* dwarf_opstream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 957C2BB3E38BDD7A8929CA8A8DACE999 /* dwarf_opstream.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		503F81753917E7FC87E350F7F4D16A2A /* Backtrace-PLCrashReporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F418A68A9C08CE136C2B0A3B251086 /* Backtrace-PLCrashReporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50DA68B0AE70AE6C1230317A593BB07F /* PLCrashAsyncSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = EE775BC165D9F7C0E3C0B6773AA85A90 /* PLCrashAsyncSignalInfo.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51C970BDD37360B18DD62D878937E81D /* FormTextFieldTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843562335BB0895B42F6D8A124409DA2 /* FormTextFieldTypeManager.swift */; };
+		52538296197DCFE2ECA7AF4ED95ED602 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708341B164AD1A85031BB1A15A8258C6 /* Store.swift */; };
+		5669C0139CCFB36CEA53EC517FDB3002 /* BacktraceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2AF7918E39A535AE875898CA3456A /* BacktraceError.swift */; };
+		5728DDE5B58407771E242CEB0BA8F3E8 /* PLCrashReporterNSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 20565DF55BB22034F76F320E249CB0A2 /* PLCrashReporterNSError.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5772EF79BD627325D959ABE91150B013 /* PersistentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB85D48CB2BFEC144BB52E9B3B95A92 /* PersistentRepository.swift */; };
+		5BCB9BB0ECB527A2E451888BC8EA1307 /* PLCrashAsyncThread_current.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FD279F9C6DC55601CC8A85626535D36 /* PLCrashAsyncThread_current.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5C552A21E990A46CED679AE09FE3E115 /* BacktraceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806238A862756752171B499D1F2BA09D /* BacktraceFileManager.swift */; };
+		5E9AF213AFBAB94FA9046D98CB4DF725 /* PLCrashAsyncMachExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DC474AEDF0AEAC17C3E0D2FC06D73F0D /* PLCrashAsyncMachExceptionInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F75A527A8EE615355C0E51848FFD189 /* Pods-My Demo App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 007C787DA31B73DF99EA0392B99F14A6 /* Pods-My Demo App-dummy.m */; };
+		617E60DB4DC4CFB828B175729A90BDB1 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC557579B49EAE16B061AC54162A55C /* System.swift */; };
+		62ABA1B4AF7F5808B3636D7706F2782A /* mach_exc.c in Sources */ = {isa = PBXBuildFile; fileRef = 19E2D7B049B41A1087A0B749E7F112C7 /* mach_exc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		648B326060EFE918341BB8D4F7F23233 /* PLCrashMachExceptionPortSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AA5EA212E66A652288F0AD04C012F6 /* PLCrashMachExceptionPortSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		650C2339B49B72C8BB779B856F4A0594 /* PLCrashLogWriterEncoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B90499C54E55B44CCA55829D25A70CB /* PLCrashLogWriterEncoding.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		659B1F8EA25E1E0117966342E2B65C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		662890EDBEFBD201BAD5158CE2E41582 /* PLCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D253EE6F20C4F1B3FC77B19A63C0407 /* PLCrashReportTextFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6681D6FE9098C081259C85023840E523 /* PLCrashAsyncCompactUnwindEncoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 73D5F2B9F4BA9BA12BC2A86F84283BDE /* PLCrashAsyncCompactUnwindEncoding.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		67991D80EE2071CD640AAD485721DA52 /* AttachmentsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66D5502097659749F49A4D24F0424D /* AttachmentsStorage.swift */; };
+		67FFA22025204648746C1850BD9FB4FF /* PLCrashReport.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 16346EE9F6D95127080FFC1C8D6DA782 /* PLCrashReport.pb-c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68E5CABD4A0D8A3F93F1B6082C180FDE /* PLCrashReportApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 082B92DEE5D2BD59159D0AFD6903B83E /* PLCrashReportApplicationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B55001FE1CF24E18E6A3D67D8C5E12F /* BacktraceClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54721B9247E476C514E2358EFB68190C /* BacktraceClientConfiguration.swift */; };
+		6C6D9F2F1F7CEC8974B50EAC5F70712F /* PLCrashAsyncDwarfCFAState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F73E9D0E1800D047387FB4D2BD8F5EC /* PLCrashAsyncDwarfCFAState.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6CDD9CD6826049810D5786E4618DE6C2 /* PLCrashAsyncThread_x86.c in Sources */ = {isa = PBXBuildFile; fileRef = 05E5BC84F8CCE83672BD60F4DB510F2E /* PLCrashAsyncThread_x86.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DC5C217A772A5988A69511BA366F3FC /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1111F7991681DD374C8A2A9FC1CBAE /* HttpMethod.swift */; };
+		6F249AB79F05EEEA1409E769C715891E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFCD08D9AD6172094FC0009FE7C17397 /* Model.xcdatamodeld */; };
+		7068BE91D338498E38FE59EBCC2B24D6 /* PLCrashReportMachineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D1B7AAD82A317F921A409C9820101 /* PLCrashReportMachineInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		745F5ED2F8369BC62C01509EE41F741B /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F8DF6892378A52DDC85E02BAFCDE2A /* PLCrashReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75464A0FCBABE10124361AC271C4CF78 /* PLCrashAsyncDwarfExpression.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6448374A1D18247484984D256387205B /* PLCrashAsyncDwarfExpression.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		75A71B20DA7252E85D32E63156757587 /* PLCrashFrameStackUnwind.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BD048CBFAF261DC10CAEC5547FCF8D /* PLCrashFrameStackUnwind.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77FEE595020EE40EA7D3AB3BEF6B023B /* PLCrashReportExceptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB29B64E66C18BCA2694D5D01242C64 /* PLCrashReportExceptionInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7943C83B76D07B7316E0EFAA066C2B5B /* PLCrashReportThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 608BC058A4D9B06C035B407688E27D79 /* PLCrashReportThreadInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A1484B9B3E0641C83E01437838713DB /* PLCrashAsyncSymbolication.c in Sources */ = {isa = PBXBuildFile; fileRef = CC53CB1B0819FBBFADB4DA94C0A1FE68 /* PLCrashAsyncSymbolication.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D48E9E92536C34C70390D5100B95EEC /* PLCrashAsyncDwarfFDE.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 83C12240D51131B66713C0FFB37410F1 /* PLCrashAsyncDwarfFDE.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E344CEEAAAC9766465A8AE982292676 /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AEF139F9C178B629F1301F253EC083 /* PLCrashReportSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E44E70848F3EE7EF66A70A5DA5B4469 /* PLCrashMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 983F86C99C36FC40443B6F8C9A86B1A3 /* PLCrashMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E519DF539EF53ABE7880B88A4A637AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7F40CEFDC674C4780C65A377428BD5DC /* PLCrashReportMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CC692443B25CA69FEDB9DB8B95A7683D /* PLCrashReportMachineInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803AF0E7B645093EC6473915C19B175B /* PLCrashReportSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDC84BF8F65284B92CEC11701709648 /* PLCrashReportSignalInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804D306A1BDC07BF25A786DEB9B5F607 /* PLCrashFrameStackUnwind.c in Sources */ = {isa = PBXBuildFile; fileRef = 1780728F94E610F9B796CC02BC70C447 /* PLCrashFrameStackUnwind.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		80D8F0FB60E90778DC38465E47E3E69B /* PLCrashReporterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A07AE3EEFC233C8122A942520739A /* PLCrashReporterConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81C3FDB114D3FD4EFA021AF6B62A5BF7 /* PLCrashAsyncThread_current_defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C59C1CB509D140B446F00F64D8D665B /* PLCrashAsyncThread_current_defs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82B38DA0A612293292E740FD71C23921 /* PLCrashFrameCompactUnwind.h in Headers */ = {isa = PBXBuildFile; fileRef = 24BE30EC8BEA69917130CED38B1C28E7 /* PLCrashFrameCompactUnwind.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		851A7273B8888B5B7A2B10383981FF55 /* mach_exc_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 477FA9733A6650047560FD6BFE39215E /* mach_exc_i386.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87889C6ACB6D40158AA52A6F82FBA0E5 /* BacktraceLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F23A66ADF650D958A1494BF4468DC /* BacktraceLogger.swift */; };
 		8924CFC806352CD0EEDB6C971DC8DCA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		8D7E3F259A58ED961E9F7262D250CD68 /* FormTextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70DC0F03B605322D6372EB28E259A48 /* FormTextFieldClearButton.swift */; };
-		9ACBACAC93045EFB130E59C2681D1384 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4F2480282D0900470CAC6599B1CD4A /* Validation.swift */; };
-		A1B74155626A3DA480C9316AF3FF8DC0 /* EasyTipView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85FC83D3F4D2E755DC2EF1055EF5430 /* EasyTipView-dummy.m */; };
-		A341742B21F5CB41E97300E76C47E32C /* FormTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB8C2C0A289EB5DB170F698EC0383DB /* FormTextField-dummy.m */; };
-		AB6B7AFA23757E4018C35C0D4E87B903 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48D6DBD4027BBC0634901EF76772DA4 /* InputValidator.swift */; };
-		AD3B91AF4FB2D4664B800C6769C7F9A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		B35570E42B0B5DA2EA7FE6FCE711CC24 /* RequiredInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E9FE8C556882B66312C2DE5903F82 /* RequiredInputValidator.swift */; };
-		B5F859BBA322A177500F16B37F426E70 /* CardExpirationDateInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C67C7148EBF61D65AFDBA805955850 /* CardExpirationDateInputValidator.swift */; };
-		D09341A5DADC4D6C7BAE2E892B48E111 /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1556708FD7CB428672A0F27ABD176394 /* EasyTipView.swift */; };
-		D50B41343936922017DFA46EE21ECB6B /* FormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = BF401019ACB0A7FAA774E4515D34668B /* FormTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E344296D5F4DB09A8FACA769581D644D /* EasyTipView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D3F9A92016C78E89CD67AC1B5F5CD5 /* EasyTipView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E40BBB1782503594F6FA87CA419F42B3 /* Formattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B943D5D220C51E9944C2C56BBC1074 /* Formattable.swift */; };
-		F019BD2498636C09671A70AF57B559CD /* CardNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31D5C9DE65C89ED965DDEAF59ECD59 /* CardNumberFormatter.swift */; };
-		F5332736303B5D0E5F149B72F3819346 /* CardExpirationDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD361967E7E26C59DC269CB78BE69F /* CardExpirationDateFormatter.swift */; };
+		893B2D9DFC782054C3BA0B8BCE64A562 /* PLCrashAsyncThread_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = E96FE93247118550680D0B3BBE1A06C3 /* PLCrashAsyncThread_arm.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89D9E2461C477B738C39C826608B7EA6 /* AttributesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C21BCA1B1ECACDE8CD73BDF597415F /* AttributesStorage.swift */; };
+		8A357CB1A6DF580B9F5429B5574BE102 /* Backtrace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27184878E20C07A79EF960B9F3EAF890 /* Backtrace-dummy.m */; };
+		8B07D887814321B5190C234CF59FCF6E /* PLCrashMachExceptionServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 10EE1219A6536281CA9001279394D356 /* PLCrashMachExceptionServer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8BC3780774DA7F6FBD2BC45814E9EA6E /* PLCrashReporterNSError.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B95608B39FE512A1F21BA5DF5BB209 /* PLCrashReporterNSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CFE4EE5AB7E0FC9A03FC6647BAD9C93 /* PLCrashAsyncMachExceptionInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = DF1D9A20C161FFDC8389AD14C2B7A188 /* PLCrashAsyncMachExceptionInfo.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8D7E3F259A58ED961E9F7262D250CD68 /* FormTextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124BF908277870F283104D6D8F240132 /* FormTextFieldClearButton.swift */; };
+		8DD3A0325A5B0A263A9AB03E802DC57F /* PLCrashAsyncDwarfPrimitives.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD284D14582020D05A694A2681C6214F /* PLCrashAsyncDwarfPrimitives.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DFD73D15F59465D1BCF015338AEBFAD /* PLCrashReportSymbolInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B750D9B74AE4B526214F79ABE2989A /* PLCrashReportSymbolInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E90BE27356269C333066AECEBBDE87B /* PLCrashReportMachExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E404B69EBF609562BEE53DE7807EE8 /* PLCrashReportMachExceptionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9161821E176EF947C95CB45BCD337A40 /* PLCrashReportRegisterInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 81299384333593394B5B8830C33752E9 /* PLCrashReportRegisterInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94F3D6F09FDF984BCE16D15AEDE9B160 /* PLCrashSysctl.c in Sources */ = {isa = PBXBuildFile; fileRef = 97642BFB2C7C90698A6B38E9D04D7BD1 /* PLCrashSysctl.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		95F6CDDBFC7B083AAE4A95BE6C8EFE41 /* URLSession+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B58B01D7CB774554AA7BCBF1BAE2 /* URLSession+Sync.swift */; };
+		97624CC6E70B194625E77D3C9A09C98C /* PLCrashReportBinaryImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D85D4E47F2F09723830308537404555A /* PLCrashReportBinaryImageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97A42D79BE5FAD2AE36330D2D4FCA2E5 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 383B3DD3E758D5431BCEDF69D4103DB0 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		987A0273ECA2700E49722D4B84434465 /* BacktraceApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0C8DB59C1C9C950368BA61C45AC90 /* BacktraceApiProtocol.swift */; };
+		9ACBACAC93045EFB130E59C2681D1384 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D9D776AF84E8CD65166DAC0F6EEC7 /* Validation.swift */; };
+		9BB4AFE243AD2C374909CAB172D86D97 /* Pods-My Demo App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2006E0B0151AB539808DC899C3B5F8CE /* Pods-My Demo App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB0190F14A5CE0F9A8576459D799262 /* BacktraceReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2C745A0FA6DE966F3349BCCE9E783 /* BacktraceReport.swift */; };
+		9D9856BB5BF4E9B4BFA0168D83D8E85B /* PLCrashAsyncThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 228C0BAF2AE5DC719412F8013A0F981F /* PLCrashAsyncThread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E6C6C996DD1430A22EB84F558F2D8C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		9F3E9E865DB62D8EA44096EDF665B6E4 /* PLCrashReportProcessorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F16B7B1A25736E461269C77CFCE0B25 /* PLCrashReportProcessorInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FB2B640A16B5E762333009D3D94E5C6 /* PLCrashAsyncDwarfFDE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8898F5E00BCA17538AD4B1B2FE8A0F38 /* PLCrashAsyncDwarfFDE.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FD7C26A1381C48BFC8582358127C53E /* BacktraceNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB70ABC3A2001873133736E201A2EED6 /* BacktraceNetworkClient.swift */; };
+		A1B10966180E375C4037BF3D6F2FC4A3 /* SignalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B99CF4488078563FD0B410465F04B3 /* SignalContext.swift */; };
+		A1B74155626A3DA480C9316AF3FF8DC0 /* EasyTipView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9D3FAAB2462FB45824B8B0F69CFB8 /* EasyTipView-dummy.m */; };
+		A1DF6393734071A23E66FF72F61CCFF5 /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A07DE6B25ABDAD4F0B57589A6F60DA /* PLCrashReportProcessInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A233DE5AB98AE36EE6E474B99A4544C3 /* PLCrashReportBinaryImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94908CDC8A00D63D631506CB198D8B1A /* PLCrashReportBinaryImageInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2C7CBEC21D019B5984480AF5E12C627 /* PLCrashSysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D8CCE9B7A736CAFFE9ABD2BF4180AF /* PLCrashSysctl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A31F0F7A379AB79F0DD57F59A2005C78 /* PLCrashLogWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD69290606E9A71E28BDC32E44416A9 /* PLCrashLogWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A341742B21F5CB41E97300E76C47E32C /* FormTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C42471AB8E9EF2EEEB1BF80A50DDFE /* FormTextField-dummy.m */; };
+		A41F6968E7076B84EDCFB84DB7308AD5 /* PLCrashAsyncMObject.c in Sources */ = {isa = PBXBuildFile; fileRef = ED8F08BDFC5B3AE56894843F92F58353 /* PLCrashAsyncMObject.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A459E6FFA17EF7E32B763B30DB2CBD10 /* PLCrashAsyncMachOImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E3BB0F40B0E62D803355A6A9C7275C9 /* PLCrashAsyncMachOImage.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A48B58DEA1221B999E5EFF46232A59B6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A46D59B5B27523715BC4C2588331F0 /* Repository.swift */; };
+		A4D12B6D150AD1E6B400A9B67A598273 /* PLCrashAsyncMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C8944CFBE2C4601DD943196BEBD4E6D9 /* PLCrashAsyncMObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A59CE4D6A75C694F15C9A16C665D8257 /* PLCrashSignalHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBB3B542CE241CD21A5B016352E6822 /* PLCrashSignalHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5C2439207029CD6B2E4AE14CBC67605 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518754D47CE715909FA83C0A35270AC /* NetworkReachability.swift */; };
+		A83917E9A6A16DF513500B18C54D3493 /* PLCrashAsyncImageList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F07E71F174BFD074051C944C6BC3AC /* PLCrashAsyncImageList.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8D718CDA5F3DE895A2523604E80087D /* PLCrashAsyncDwarfCFAState.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BE25FD97AA09B84B9F35732ED4C5C631 /* PLCrashAsyncDwarfCFAState.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		A96097A683E29C1DDCC4193C2F38D630 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A9C6DC318DB4FF72EA7D3EF07187055A /* PLCrashAsyncDwarfCIE.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4C30F9A2AC6BDC7F97A4982C23D5781 /* PLCrashAsyncDwarfCIE.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB6B7AFA23757E4018C35C0D4E87B903 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D18BB532848308E84CDB2CBD9D66A /* InputValidator.swift */; };
+		B14140631CC27B8DB196EBBDAFE38B86 /* PLCrashAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = 7118F02E942818894195B9BDC603EFB9 /* PLCrashAsync.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B21C925ADD9AD5B481B1A1BB6B8A7CC5 /* PLCrashReportExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D737F6FB80CCA97A4B999C14FA5AB57F /* PLCrashReportExceptionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B35570E42B0B5DA2EA7FE6FCE711CC24 /* RequiredInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE57A7A420C4693B745D68AFCB7D918B /* RequiredInputValidator.swift */; };
+		B3BD9F43CD28CAC11E3CFDEA9B73FFFB /* PLCrashFrameCompactUnwind.c in Sources */ = {isa = PBXBuildFile; fileRef = AD766985D6AF1E7CB21572C7C090C017 /* PLCrashFrameCompactUnwind.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B4869ED14627915CE66996637A75AB71 /* PLCrashReportMachExceptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4668DD1590ED2C24C8F5FA00B08B163 /* PLCrashReportMachExceptionInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5F859BBA322A177500F16B37F426E70 /* CardExpirationDateInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBB203885C34877A8D3118AD3EDBAF6 /* CardExpirationDateInputValidator.swift */; };
+		B6951328ED0FF24D8A751D49E86B99A7 /* PLCrashReportApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 509A10E7C128856AA6B26AC6821A478D /* PLCrashReportApplicationInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B734D9C1798A32689C21F455728F0419 /* BacktraceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89668713B75FF60EDC8A4C2A16ACF896 /* BacktraceResult.swift */; };
+		B77798D39A804F734F6470BD491FDFEF /* PLCrashAsyncObjCSection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7C50B8D8566EC8D856348B9D73202DB8 /* PLCrashAsyncObjCSection.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B9A29E31D6445E14EAA51B922E10EB11 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F0D2EBEDF38EC9016C07C958B807F9 /* protobuf-c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA11FC5374B4745ABCE23F00B13B9C89 /* BacktraceCrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D05D41EE586FAC47DD778A33E5920A /* BacktraceCrashReporter.swift */; };
+		BAA4E2CF53BFB7569FEA975C66526C6A /* PLCrashAsyncDwarfExpression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D7B33D692E71B4E9A3ACFC2739B6 /* PLCrashAsyncDwarfExpression.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCBF545C8F13F89FFDA395724FE1F57E /* PLCrashAsyncDwarfEncoding.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BE9FE2E3525075F6C2EA54CF8C430EDD /* PLCrashAsyncDwarfEncoding.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		BEC9EA60E201AEFC83550BF6EBD35530 /* PLCrashCompatConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC93EFE4AF29AF3F4CD0C0DC45C9054 /* PLCrashCompatConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF4C41F7B0AFD77DA56DCEB70F50DA63 /* PLCrashMachExceptionPort.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D127459759D1C7BB2CAE77F2AA3EF9 /* PLCrashMachExceptionPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C54356A3E32348257B6AC4C31B27E1A1 /* PLCrashSignalHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23DA9B7885B90304EEDC7D301A328750 /* PLCrashSignalHandler.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7BE8A11E73B334194A42FC24F06011B /* PLCrashAsyncSymbolication.h in Headers */ = {isa = PBXBuildFile; fileRef = 734AB9E32A1C75497321C7F20A5AAE16 /* PLCrashAsyncSymbolication.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C91364F476B260B65A9E5171629BFE25 /* PLCrashNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = A13251D3573396B298B7A97586D63BAE /* PLCrashNamespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC74EB3F99E5CE7453B1AAB38317586D /* PLCrashHostInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9674F37E93C7C9CC0C9C1DD37F4386D8 /* PLCrashHostInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC830575E79FE63F3378B1A385076845 /* PLCrashUncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BF1E4A50771A8C8B3D110EF58EEA4E /* PLCrashUncaughtExceptionHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D09341A5DADC4D6C7BAE2E892B48E111 /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E72D824C3AAF190A1F02CFDFD5C917 /* EasyTipView.swift */; };
+		D24CA9B2B74D50C1CB29981A79E63D62 /* PLCrashAsyncThread_current.S in Sources */ = {isa = PBXBuildFile; fileRef = 3D471BD03BC86739DBD5E6F6B8CA86E4 /* PLCrashAsyncThread_current.S */; };
+		D34DFE6FD855FCE84B010EAA3305856E /* BacktraceClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D856DF996AB1EC83EB679CCE37C4E5C /* BacktraceClientDelegate.swift */; };
+		D3A8BA0EFCFF6069AF911B169D607792 /* PLCrashAsync.c in Sources */ = {isa = PBXBuildFile; fileRef = D8699081F4BD6E69CBFBF4EBC10986D3 /* PLCrashAsync.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D4FE904786FCFEC65BAD591B72CB81B7 /* Backtrace.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E3C40C3A1D5A1AB81C1330891ADE83 /* Backtrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D50B41343936922017DFA46EE21ECB6B /* FormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2532702E8812EA3FC6E6B4C19CE4D39E /* FormTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D2EC14D8B728E001FA8DA858CFF030 /* mach_exc_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = E831328401C115F8195616D4D5E68339 /* mach_exc_x86_64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D97D4F9B8F183A1005458C539AEBCA9E /* PLCrashAsyncMachOImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBEC7A3E177AAE83DE5C026B341698B /* PLCrashAsyncMachOImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB6F376269B3A12BE9D22F295A26FE68 /* BacktraceOomWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB2AAF1B8C59C1E0A5C39AEAB067B52 /* BacktraceOomWatcher.swift */; };
+		DBDAF1E507FC7194E30BC6AAF1CEC344 /* AttachmentBookmarkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771F4629D48D533754F7983691633526 /* AttachmentBookmarkHandler.swift */; };
+		DE4900B89288531CFB9293C36B92658F /* PLCrashReporterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 876E41BB9BD91C68F781A2C2F122B806 /* PLCrashReporterConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE591DC03D40842B8D1B2E21358ABB38 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6BBA87C93E5F69CECC29F1CFEACB2 /* Annotations.swift */; };
+		DE5B2D901B7682D634D55736CF36C93A /* PLCrashMachExceptionPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C835E60287128926F55755C8AB35914 /* PLCrashMachExceptionPort.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DEB84B2770268A023D8C376B3E701CB5 /* PLCrashFrameWalker.c in Sources */ = {isa = PBXBuildFile; fileRef = C73A07C7BCD665C1A8416421C3836728 /* PLCrashFrameWalker.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFF833027F80155A3B3A5566FEE90C10 /* PLCrashAsyncObjCSection.h in Headers */ = {isa = PBXBuildFile; fileRef = D741938057E40E202E52B1B182371B44 /* PLCrashAsyncObjCSection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E202E0E869C5732AD91A92AF38D4BF4C /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD12DBB0F7CF5277DCDB72FD2E766E7 /* PLCrashReportSystemInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E3047DF826527722F0B63A3EF9352C4E /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68127A204E96A498A6563A48D4DB350 /* Dispatcher.swift */; };
+		E344296D5F4DB09A8FACA769581D644D /* EasyTipView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC4AA5426C067E7A4D32EA61911484B /* EasyTipView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40BBB1782503594F6FA87CA419F42B3 /* Formattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5790901BB71737AF3C95D7DAAA302071 /* Formattable.swift */; };
+		E426241E63F965DEAC43DFE2E3643736 /* PLCrashAsyncDwarfPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9A51D90167A199A2A406252E46CE /* PLCrashAsyncDwarfPrimitives.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E4264B25D03C892291CB2E8B20B91FD0 /* Dispatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6F8824C788150190DE5BA49E8459C /* Dispatching.swift */; };
+		E5B6C89B1322CA6DE12BD7AB876BEF35 /* BacktraceWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A32CF92679E6F86CD3A2B8605E714A9 /* BacktraceWatcher.swift */; };
+		E7980724592E64BDAA59E04D7C5F8D46 /* PLCrashAsyncDwarfEncoding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A5B36BDB7942F686930A32FC464B75 /* PLCrashAsyncDwarfEncoding.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E88269A45BDA6F4E7105A3468E34E9FA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2578ACA5B415B731A49E3D93D7975 /* Result.swift */; };
+		EB6A9C72075A079DCAF6E1A1DBD4703E /* PLCrashUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE8AFBBE4529055FE4375292E308CE /* PLCrashUncaughtExceptionHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC709500984BFFCA18CD10473569745B /* BacktraceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9125AF2D99ED8D93372D40F3928E38 /* BacktraceClient.swift */; };
+		ECD9C58E4E7B4970EE236232101BAD1B /* PLCrashAsyncImageList.h in Headers */ = {isa = PBXBuildFile; fileRef = A44C922D17DF61D4E47488D7B23D5E97 /* PLCrashAsyncImageList.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDCB4BF977631B4C946FE69868BCC895 /* PLCrashReportProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C25C1F7D2918ACF8F6304002FC7F7D4 /* PLCrashReportProcessInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EEAC1C9915E4691055302FE83053A7DC /* PLCrashReportStackFrameInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C55C0DA5E312BC49B0079189263C4E1 /* PLCrashReportStackFrameInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F019BD2498636C09671A70AF57B559CD /* CardNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6E74BB2B9A1DA65A973F7B3460E3B /* CardNumberFormatter.swift */; };
+		F22FBB9C2331A01F5526C9D70FFF9A69 /* PLCrashFrameWalker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4731CC305E2DFA37BCDF4BDA20FD4360 /* PLCrashFrameWalker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2E355906A0DD606B345C298EDE9955C /* PLCrashLogWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E6ADF91BDE3DA1001266F5532E0DC4A3 /* PLCrashLogWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2F1BB4627F8BEF05B846A8EB79AB38A /* PLCrashHostInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC34BB024410035DD251D008AA9558C /* PLCrashHostInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5062222E1FAE87FF9FCD0E5CAC678F4 /* BacktraceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223928E6305580E4B3FD87D0C46FAECD /* BacktraceResponse.swift */; };
+		F5332736303B5D0E5F149B72F3819346 /* CardExpirationDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA179BE4F81A56775797B5B9A951A7 /* CardExpirationDateFormatter.swift */; };
+		F653BF9A5FA6D2C51E986C44FD6C2BB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F7346006582FEC865BDB0BC25AE883B7 /* PLCrashProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCDAE8A2D5A5B4769075A9B3A0F735 /* PLCrashProcessInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8F7322DACD58A740C310E63FB011AD7 /* PLCrashReportThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF01FE1C7B8E57FA14F1811ADE505EC /* PLCrashReportThreadInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F915B7C3FF08CEE9DE24B61DB99C5FAB /* PLCrashReportRegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A05CF14E9DDB50F192B48F47A8DCDD45 /* PLCrashReportRegisterInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F9A0180004F54A39ABB85E184A18FF3A /* dwarf_opstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A7712CFD3C3B786E817CDC441123733 /* dwarf_opstream.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA2EE28E218111330E68DA7DF10DE4F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 048D21E3C8151CD23D428D38093E1538;
-			remoteInfo = EasyTipView;
-		};
-		AB292E64BDFF31D61527C2A1258C7484 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F60027FAE4C10A68998A12C22EDF64F3;
-			remoteInfo = TestFairy;
-		};
-		B7B50257B71206EEC3E73E4733763128 /* PBXContainerItemProxy */ = {
+		1C0A4471050E50EA49F1D0F2EF593021 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FA56E39EF6C470C3DFC0A23077F6D611;
 			remoteInfo = FormTextField;
 		};
+		3927EFFE33279A97F89F8D56F2AFCFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60027FAE4C10A68998A12C22EDF64F3;
+			remoteInfo = TestFairy;
+		};
+		85B245A1D334A346A68087EFB2A48313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FDE708250DF16932769A0AC8C5757D6;
+			remoteInfo = Backtrace;
+		};
+		BF398E259572163DEC384BD78F7D057D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF98FE971F13CD009A3E07A01EF3CAF0;
+			remoteInfo = "Backtrace-PLCrashReporter";
+		};
+		C775C65376B2808ED4F548C23F84BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048D21E3C8151CD23D428D38093E1538;
+			remoteInfo = EasyTipView;
+		};
+		C8DBB77E8745ED1A08A68C4E0A0786EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF98FE971F13CD009A3E07A01EF3CAF0;
+			remoteInfo = "Backtrace-PLCrashReporter";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		007C787DA31B73DF99EA0392B99F14A6 /* Pods-My Demo App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-My Demo App-dummy.m"; sourceTree = "<group>"; };
-		03B943D5D220C51E9944C2C56BBC1074 /* Formattable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formattable.swift; path = Source/Formatter/Formattable.swift; sourceTree = "<group>"; };
-		06CEFF15743FA6E9081FF6435FB952CA /* TestFairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TestFairy.debug.xcconfig; sourceTree = "<group>"; };
+		00886FE68EE1054380381B24F97F31AB /* CrashReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CrashReporter.h; path = Sources/include/CrashReporter.h; sourceTree = "<group>"; };
+		00AA5EA212E66A652288F0AD04C012F6 /* PLCrashMachExceptionPortSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashMachExceptionPortSet.m; path = Sources/PLCrashMachExceptionPortSet.m; sourceTree = "<group>"; };
+		00B99CF4488078563FD0B410465F04B3 /* SignalContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalContext.swift; path = Sources/Public/Internal/SignalContext.swift; sourceTree = "<group>"; };
+		012E4568CE8F94426B1E9F8486C43D2B /* PLCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReport.h; path = Sources/include/PLCrashReport.h; sourceTree = "<group>"; };
+		03A07DE6B25ABDAD4F0B57589A6F60DA /* PLCrashReportProcessInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportProcessInfo.h; path = Sources/include/PLCrashReportProcessInfo.h; sourceTree = "<group>"; };
+		05E5BC84F8CCE83672BD60F4DB510F2E /* PLCrashAsyncThread_x86.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncThread_x86.c; path = Sources/PLCrashAsyncThread_x86.c; sourceTree = "<group>"; };
+		06E9D3FAAB2462FB45824B8B0F69CFB8 /* EasyTipView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTipView-dummy.m"; sourceTree = "<group>"; };
+		082B92DEE5D2BD59159D0AFD6903B83E /* PLCrashReportApplicationInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportApplicationInfo.h; path = Sources/include/PLCrashReportApplicationInfo.h; sourceTree = "<group>"; };
 		09658134EF3E8FF70E7E8DAEA44A284C /* Pods-My Demo App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-My Demo App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A01D7B33D692E71B4E9A3ACFC2739B6 /* PLCrashAsyncDwarfExpression.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfExpression.cpp; path = Sources/PLCrashAsyncDwarfExpression.cpp; sourceTree = "<group>"; };
+		0AD8E9AAA5FF5CDB654A707ADF759141 /* FormTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormTextField-umbrella.h"; sourceTree = "<group>"; };
+		0C59C1CB509D140B446F00F64D8D665B /* PLCrashAsyncThread_current_defs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncThread_current_defs.h; path = Sources/PLCrashAsyncThread_current_defs.h; sourceTree = "<group>"; };
+		0D2C3138642764034AB2C0DE5BF2AA37 /* EasyTipView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTipView-prefix.pch"; sourceTree = "<group>"; };
+		1008065EE2483C2B4F7F6E9494933E2E /* EasyTipView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyTipView-Info.plist"; sourceTree = "<group>"; };
+		10EE1219A6536281CA9001279394D356 /* PLCrashMachExceptionServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashMachExceptionServer.h; path = Sources/PLCrashMachExceptionServer.h; sourceTree = "<group>"; };
+		124BF908277870F283104D6D8F240132 /* FormTextFieldClearButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldClearButton.swift; path = Source/FormTextFieldClearButton.swift; sourceTree = "<group>"; };
+		12F8DF6892378A52DDC85E02BAFCDE2A /* PLCrashReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReporter.h; path = Sources/include/PLCrashReporter.h; sourceTree = "<group>"; };
 		130F86DE4394AAFB62D69486F1BA4717 /* Pods-My Demo App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-My Demo App"; path = Pods_My_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1556708FD7CB428672A0F27ABD176394 /* EasyTipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTipView.swift; path = Sources/EasyTipView/EasyTipView.swift; sourceTree = "<group>"; };
-		189DEC451880F4FA5EE91D853EF1BB46 /* DecimalInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalInputValidator.swift; path = Source/InputValidator/DecimalInputValidator.swift; sourceTree = "<group>"; };
-		1B31D5C9DE65C89ED965DDEAF59ECD59 /* CardNumberFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardNumberFormatter.swift; path = Source/Formatter/CardNumberFormatter.swift; sourceTree = "<group>"; };
+		1463B088A12D69FC663DBC268E808DFC /* protobuf-c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "protobuf-c.c"; path = "Dependencies/protobuf-c/protobuf-c/protobuf-c.c"; sourceTree = "<group>"; };
+		16346EE9F6D95127080FFC1C8D6DA782 /* PLCrashReport.pb-c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PLCrashReport.pb-c.h"; path = "Sources/Autogenerated/PLCrashReport.pb-c.h"; sourceTree = "<group>"; };
+		16D05D41EE586FAC47DD778A33E5920A /* BacktraceCrashReporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceCrashReporter.swift; path = Sources/Public/BacktraceCrashReporter.swift; sourceTree = "<group>"; };
+		1780728F94E610F9B796CC02BC70C447 /* PLCrashFrameStackUnwind.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashFrameStackUnwind.c; path = Sources/PLCrashFrameStackUnwind.c; sourceTree = "<group>"; };
+		182F88617BB7137D042B7B18CA81501E /* Backtrace-PLCrashReporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Backtrace-PLCrashReporter.debug.xcconfig"; sourceTree = "<group>"; };
+		194E3F4C15131118D23847131A8C7BDD /* PLCrashAsyncMachOString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncMachOString.h; path = Sources/PLCrashAsyncMachOString.h; sourceTree = "<group>"; };
+		19E2D7B049B41A1087A0B749E7F112C7 /* mach_exc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mach_exc.c; path = Sources/Autogenerated/mach_exc.c; sourceTree = "<group>"; };
+		1BC4AA5426C067E7A4D32EA61911484B /* EasyTipView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTipView-umbrella.h"; sourceTree = "<group>"; };
+		1D253EE6F20C4F1B3FC77B19A63C0407 /* PLCrashReportTextFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportTextFormatter.h; path = Sources/include/PLCrashReportTextFormatter.h; sourceTree = "<group>"; };
+		1DA93D8DCDDE0FDA4E4DE08C150174B6 /* Backtrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Backtrace.modulemap; sourceTree = "<group>"; };
+		1E3BB0F40B0E62D803355A6A9C7275C9 /* PLCrashAsyncMachOImage.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncMachOImage.c; path = Sources/PLCrashAsyncMachOImage.c; sourceTree = "<group>"; };
+		1FBEC7A3E177AAE83DE5C026B341698B /* PLCrashAsyncMachOImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncMachOImage.h; path = Sources/PLCrashAsyncMachOImage.h; sourceTree = "<group>"; };
 		2006E0B0151AB539808DC899C3B5F8CE /* Pods-My Demo App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-My Demo App-umbrella.h"; sourceTree = "<group>"; };
+		20565DF55BB22034F76F320E249CB0A2 /* PLCrashReporterNSError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReporterNSError.m; path = Sources/PLCrashReporterNSError.m; sourceTree = "<group>"; };
+		215A779EC720E8333AE40FB116593A8A /* Backtrace-PLCrashReporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Backtrace-PLCrashReporter-dummy.m"; sourceTree = "<group>"; };
+		217ED2F97EBEFA170ABD51599F1C89BA /* EasyTipView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTipView.release.xcconfig; sourceTree = "<group>"; };
+		223928E6305580E4B3FD87D0C46FAECD /* BacktraceResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceResponse.swift; path = Sources/Features/Client/BacktraceResponse.swift; sourceTree = "<group>"; };
+		228C0BAF2AE5DC719412F8013A0F981F /* PLCrashAsyncThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncThread.h; path = Sources/PLCrashAsyncThread.h; sourceTree = "<group>"; };
+		23D604BC5A08442A2349168D5A0E6386 /* CrashReporting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrashReporting.swift; path = Sources/Public/Internal/CrashReporting.swift; sourceTree = "<group>"; };
+		23DA9B7885B90304EEDC7D301A328750 /* PLCrashSignalHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashSignalHandler.mm; path = Sources/PLCrashSignalHandler.mm; sourceTree = "<group>"; };
 		24599A3E071406E6D4A22B2AC6CE2603 /* Pods-My Demo App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-My Demo App-resources.sh"; sourceTree = "<group>"; };
-		24B6962353C655710CDFDF45B5DC8DBB /* EasyTipView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTipView-prefix.pch"; sourceTree = "<group>"; };
+		24BE30EC8BEA69917130CED38B1C28E7 /* PLCrashFrameCompactUnwind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashFrameCompactUnwind.h; path = Sources/PLCrashFrameCompactUnwind.h; sourceTree = "<group>"; };
+		2532702E8812EA3FC6E6B4C19CE4D39E /* FormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FormTextField.h; path = Source/FormTextField.h; sourceTree = "<group>"; };
+		26F07E71F174BFD074051C944C6BC3AC /* PLCrashAsyncImageList.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncImageList.cpp; path = Sources/PLCrashAsyncImageList.cpp; sourceTree = "<group>"; };
+		27184878E20C07A79EF960B9F3EAF890 /* Backtrace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Backtrace-dummy.m"; sourceTree = "<group>"; };
+		27A5B36BDB7942F686930A32FC464B75 /* PLCrashAsyncDwarfEncoding.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfEncoding.cpp; path = Sources/PLCrashAsyncDwarfEncoding.cpp; sourceTree = "<group>"; };
+		27BDCB83BC65B3EE6EDCF0640C01B354 /* PLCrashAsyncCompactUnwindEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncCompactUnwindEncoding.h; path = Sources/PLCrashAsyncCompactUnwindEncoding.h; sourceTree = "<group>"; };
+		2927BF378C04201EC5C3EB1C8DE2EBA9 /* FormTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextField.swift; path = Source/FormTextField.swift; sourceTree = "<group>"; };
+		2BB1F4A272725621A304D03C1A33EFD2 /* PLCrashReportSignalInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportSignalInfo.m; path = Sources/PLCrashReportSignalInfo.m; sourceTree = "<group>"; };
+		2BD12DBB0F7CF5277DCDB72FD2E766E7 /* PLCrashReportSystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportSystemInfo.m; path = Sources/PLCrashReportSystemInfo.m; sourceTree = "<group>"; };
+		2CE7C8F66DAFB8FBA74B3F7F42D77585 /* InputValidatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputValidatable.swift; path = Source/InputValidator/InputValidatable.swift; sourceTree = "<group>"; };
 		31FB42D7B4767AE8B951CCBB850BA1FD /* FormTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FormTextField; path = FormTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		334C25E04496F0CF48CFECB12837FBBC /* FormTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormTextField-umbrella.h"; sourceTree = "<group>"; };
-		3C3E9FE8C556882B66312C2DE5903F82 /* RequiredInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredInputValidator.swift; path = Source/InputValidator/RequiredInputValidator.swift; sourceTree = "<group>"; };
-		3CDF33B65A2B7B6143E3C9075AF07230 /* FormTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FormTextField.modulemap; sourceTree = "<group>"; };
-		40FD361967E7E26C59DC269CB78BE69F /* CardExpirationDateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardExpirationDateFormatter.swift; path = Source/Formatter/CardExpirationDateFormatter.swift; sourceTree = "<group>"; };
+		325D26B392DA5E05E5E7FDE48456DA0D /* PLCrashProcessInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashProcessInfo.h; path = Sources/PLCrashProcessInfo.h; sourceTree = "<group>"; };
+		3280B0EA2228E577E09A2F4018B8453F /* MultipartRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartRequest.swift; path = Sources/Features/Network/MultipartRequest.swift; sourceTree = "<group>"; };
+		383B3DD3E758D5431BCEDF69D4103DB0 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfCFAStateEvaluation.cpp; path = Sources/PLCrashAsyncDwarfCFAStateEvaluation.cpp; sourceTree = "<group>"; };
+		384927D71359E6FB26A5A147E54C8399 /* FormTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FormTextField-Info.plist"; sourceTree = "<group>"; };
+		3A32CF92679E6F86CD3A2B8605E714A9 /* BacktraceWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceWatcher.swift; path = Sources/Features/Watcher/BacktraceWatcher.swift; sourceTree = "<group>"; };
+		3AA2AF7918E39A535AE875898CA3456A /* BacktraceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceError.swift; path = Sources/Features/Error/BacktraceError.swift; sourceTree = "<group>"; };
+		3ABA2C749EE5BFB4F57DDEA9307EB18D /* ReportingPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReportingPolicy.swift; path = Sources/Public/Internal/ReportingPolicy.swift; sourceTree = "<group>"; };
+		3C25C1F7D2918ACF8F6304002FC7F7D4 /* PLCrashReportProcessInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportProcessInfo.m; path = Sources/PLCrashReportProcessInfo.m; sourceTree = "<group>"; };
+		3CF01FE1C7B8E57FA14F1811ADE505EC /* PLCrashReportThreadInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportThreadInfo.m; path = Sources/PLCrashReportThreadInfo.m; sourceTree = "<group>"; };
+		3D471BD03BC86739DBD5E6F6B8CA86E4 /* PLCrashAsyncThread_current.S */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncThread_current.S; path = Sources/PLCrashAsyncThread_current.S; sourceTree = "<group>"; };
+		3E17532BA5260F5698E721AF5E04FDD3 /* PLCrashReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReporter.m; path = Sources/PLCrashReporter.m; sourceTree = "<group>"; };
+		3E6787541958C7DF1E151D02C9F6E9D5 /* Map+KeyPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Map+KeyPath.swift"; path = "Sources/Public/Internal/Map+KeyPath.swift"; sourceTree = "<group>"; };
 		41F8BCF6A085440024C13C225971F1BC /* Pods-My Demo App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-My Demo App-Info.plist"; sourceTree = "<group>"; };
-		430D8A511A9CB2D156A43B47E9383A43 /* FormTextFieldTypeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldTypeManager.swift; path = Source/FormTextFieldTypeManager.swift; sourceTree = "<group>"; };
-		4B39C325BCA7689CEC6B7AB961E71979 /* FormTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormTextField.release.xcconfig; sourceTree = "<group>"; };
+		42376341274AEAD2CDEBDC34C53ED898 /* BacktraceCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceCredentials.swift; path = Sources/Public/BacktraceCredentials.swift; sourceTree = "<group>"; };
+		454478CF6DA70E5FFEFFE700C7660C7B /* mach_exc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mach_exc.h; path = Sources/Autogenerated/mach_exc.h; sourceTree = "<group>"; };
+		4731CC305E2DFA37BCDF4BDA20FD4360 /* PLCrashFrameWalker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashFrameWalker.h; path = Sources/PLCrashFrameWalker.h; sourceTree = "<group>"; };
+		473349F7BD0D319D7819B91926D0EC09 /* PLCrashAsyncThread_arm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncThread_arm.h; path = Sources/PLCrashAsyncThread_arm.h; sourceTree = "<group>"; };
+		477FA9733A6650047560FD6BFE39215E /* mach_exc_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mach_exc_i386.h; path = Sources/Autogenerated/mach_exc_i386.h; sourceTree = "<group>"; };
+		490D9D776AF84E8CD65166DAC0F6EEC7 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation/Validation.swift; sourceTree = "<group>"; };
+		49EB9A51D90167A199A2A406252E46CE /* PLCrashAsyncDwarfPrimitives.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfPrimitives.cpp; path = Sources/PLCrashAsyncDwarfPrimitives.cpp; sourceTree = "<group>"; };
+		4A684D55CC0EFAFB16DC955CE17CA9EC /* PLCrashAsyncThread.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncThread.c; path = Sources/PLCrashAsyncThread.c; sourceTree = "<group>"; };
+		4A7712CFD3C3B786E817CDC441123733 /* dwarf_opstream.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dwarf_opstream.cpp; path = Sources/dwarf_opstream.cpp; sourceTree = "<group>"; };
+		4BB2AAF1B8C59C1E0A5C39AEAB067B52 /* BacktraceOomWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceOomWatcher.swift; path = Sources/Features/Client/BacktraceOomWatcher.swift; sourceTree = "<group>"; };
+		4D1111F7991681DD374C8A2A9FC1CBAE /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = Sources/Features/Network/HttpMethod.swift; sourceTree = "<group>"; };
+		509A10E7C128856AA6B26AC6821A478D /* PLCrashReportApplicationInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportApplicationInfo.m; path = Sources/PLCrashReportApplicationInfo.m; sourceTree = "<group>"; };
+		52D6BBA87C93E5F69CECC29F1CFEACB2 /* Annotations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Annotations.swift; path = Sources/Features/Attributes/Annotations.swift; sourceTree = "<group>"; };
 		53DE17DD43AE388ACC45CA1926022410 /* Pods-My Demo App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-My Demo App.modulemap"; sourceTree = "<group>"; };
-		63D3F9A92016C78E89CD67AC1B5F5CD5 /* EasyTipView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTipView-umbrella.h"; sourceTree = "<group>"; };
-		6B4AEA6A5EB392F8F16CF07F71EDC55E /* UIKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKitExtensions.swift; path = Sources/EasyTipView/UIKitExtensions.swift; sourceTree = "<group>"; };
-		7E4F2480282D0900470CAC6599B1CD4A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation/Validation.swift; sourceTree = "<group>"; };
+		54721B9247E476C514E2358EFB68190C /* BacktraceClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceClientConfiguration.swift; path = Sources/Public/BacktraceClientConfiguration.swift; sourceTree = "<group>"; };
+		5545B06157B55C79AFB05198D3259B11 /* AttributesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributesProvider.swift; path = Sources/Features/Attributes/AttributesProvider.swift; sourceTree = "<group>"; };
+		55B95608B39FE512A1F21BA5DF5BB209 /* PLCrashReporterNSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReporterNSError.h; path = Sources/include/PLCrashReporterNSError.h; sourceTree = "<group>"; };
+		5790901BB71737AF3C95D7DAAA302071 /* Formattable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formattable.swift; path = Source/Formatter/Formattable.swift; sourceTree = "<group>"; };
+		5A9CBEECFB105B5DA0F48B9C4023D088 /* PLCrashFeatureConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashFeatureConfig.h; path = Sources/include/PLCrashFeatureConfig.h; sourceTree = "<group>"; };
+		5C835E60287128926F55755C8AB35914 /* PLCrashMachExceptionPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashMachExceptionPort.h; path = Sources/PLCrashMachExceptionPort.h; sourceTree = "<group>"; };
+		5D3016124EFF8C97B482EB24654532D2 /* DecimalInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalInputValidator.swift; path = Source/InputValidator/DecimalInputValidator.swift; sourceTree = "<group>"; };
+		5DB85D48CB2BFEC144BB52E9B3B95A92 /* PersistentRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistentRepository.swift; path = Sources/Features/Repository/PersistentRepository.swift; sourceTree = "<group>"; };
+		5E7B828A562E50F2BFA4CFB9DD173887 /* FormTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormTextField.release.xcconfig; sourceTree = "<group>"; };
+		5F16B7B1A25736E461269C77CFCE0B25 /* PLCrashReportProcessorInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportProcessorInfo.h; path = Sources/include/PLCrashReportProcessorInfo.h; sourceTree = "<group>"; };
+		5FBD58C704EDD1ECE32A157C513B132C /* PLCrashReportTextFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportTextFormatter.m; path = Sources/PLCrashReportTextFormatter.m; sourceTree = "<group>"; };
+		608BC058A4D9B06C035B407688E27D79 /* PLCrashReportThreadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportThreadInfo.h; path = Sources/include/PLCrashReportThreadInfo.h; sourceTree = "<group>"; };
+		619663C3779E44B160F9A1591C62DD6B /* Model.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6432EB7A2CCABF7CD30048F74A0BF9D8 /* upload-dsym.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "upload-dsym.sh"; sourceTree = "<group>"; };
+		6448374A1D18247484984D256387205B /* PLCrashAsyncDwarfExpression.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncDwarfExpression.hpp; path = Sources/PLCrashAsyncDwarfExpression.hpp; sourceTree = "<group>"; };
+		693F29E38FAE370BF2B3BA6D1BD0E75A /* PLCrashReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReport.m; path = Sources/PLCrashReport.m; sourceTree = "<group>"; };
+		6A060F7981D383FF8A0C0F835CAA54FD /* Foundation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Foundation+Extensions.swift"; path = "Sources/Features/Extensions/Foundation+Extensions.swift"; sourceTree = "<group>"; };
+		6AA1FF3136D33B5648256027D22524CA /* PLCrashReport.pb-c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "PLCrashReport.pb-c.c"; path = "Sources/Autogenerated/PLCrashReport.pb-c.c"; sourceTree = "<group>"; };
+		6CB29B64E66C18BCA2694D5D01242C64 /* PLCrashReportExceptionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportExceptionInfo.m; path = Sources/PLCrashReportExceptionInfo.m; sourceTree = "<group>"; };
+		6DC34BB024410035DD251D008AA9558C /* PLCrashHostInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashHostInfo.m; path = Sources/PLCrashHostInfo.m; sourceTree = "<group>"; };
+		6F614ED5DA57AECB69BCB594ACF3CA7B /* PLCrashReportProcessorInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportProcessorInfo.m; path = Sources/PLCrashReportProcessorInfo.m; sourceTree = "<group>"; };
+		6FD0C01C7170EA7C326A218FD75C10A3 /* BacktraceApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceApi.swift; path = Sources/Features/Network/BacktraceApi.swift; sourceTree = "<group>"; };
+		6FD279F9C6DC55601CC8A85626535D36 /* PLCrashAsyncThread_current.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncThread_current.c; path = Sources/PLCrashAsyncThread_current.c; sourceTree = "<group>"; };
+		708341B164AD1A85031BB1A15A8258C6 /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Sources/Public/Internal/Store.swift; sourceTree = "<group>"; };
+		7118F02E942818894195B9BDC603EFB9 /* PLCrashAsync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsync.h; path = Sources/PLCrashAsync.h; sourceTree = "<group>"; };
+		734AB9E32A1C75497321C7F20A5AAE16 /* PLCrashAsyncSymbolication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncSymbolication.h; path = Sources/PLCrashAsyncSymbolication.h; sourceTree = "<group>"; };
+		73C8353E9B7259DBA9B147097C33A208 /* BacktraceReportStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceReportStatus.swift; path = Sources/Public/BacktraceReportStatus.swift; sourceTree = "<group>"; };
+		73D5F2B9F4BA9BA12BC2A86F84283BDE /* PLCrashAsyncCompactUnwindEncoding.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncCompactUnwindEncoding.c; path = Sources/PLCrashAsyncCompactUnwindEncoding.c; sourceTree = "<group>"; };
+		75C21BCA1B1ECACDE8CD73BDF597415F /* AttributesStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributesStorage.swift; path = Sources/Features/Attributes/AttributesStorage.swift; sourceTree = "<group>"; };
+		75F0D2EBEDF38EC9016C07C958B807F9 /* protobuf-c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "protobuf-c.h"; path = "Dependencies/protobuf-c/protobuf-c/protobuf-c.h"; sourceTree = "<group>"; };
+		771F4629D48D533754F7983691633526 /* AttachmentBookmarkHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentBookmarkHandler.swift; path = Sources/Features/Client/Model/AttachmentBookmarkHandler.swift; sourceTree = "<group>"; };
+		7B38581F4ECFDCA8900005AED2E8D86B /* BacktraceClientCustomizing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceClientCustomizing.swift; path = Sources/Public/BacktraceClientCustomizing.swift; sourceTree = "<group>"; };
+		7B90499C54E55B44CCA55829D25A70CB /* PLCrashLogWriterEncoding.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashLogWriterEncoding.c; path = Sources/PLCrashLogWriterEncoding.c; sourceTree = "<group>"; };
+		7BBB203885C34877A8D3118AD3EDBAF6 /* CardExpirationDateInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardExpirationDateInputValidator.swift; path = Source/InputValidator/CardExpirationDateInputValidator.swift; sourceTree = "<group>"; };
+		7BD5B726BC33A6E0FEE8000B887A1AD5 /* TestFairy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestFairy.h; sourceTree = "<group>"; };
+		7BDC84BF8F65284B92CEC11701709648 /* PLCrashReportSignalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportSignalInfo.h; path = Sources/include/PLCrashReportSignalInfo.h; sourceTree = "<group>"; };
+		7C50B8D8566EC8D856348B9D73202DB8 /* PLCrashAsyncObjCSection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncObjCSection.mm; path = Sources/PLCrashAsyncObjCSection.mm; sourceTree = "<group>"; };
+		7C55C0DA5E312BC49B0079189263C4E1 /* PLCrashReportStackFrameInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportStackFrameInfo.h; path = Sources/include/PLCrashReportStackFrameInfo.h; sourceTree = "<group>"; };
+		7FBB3B542CE241CD21A5B016352E6822 /* PLCrashSignalHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashSignalHandler.h; path = Sources/PLCrashSignalHandler.h; sourceTree = "<group>"; };
+		7FD69290606E9A71E28BDC32E44416A9 /* PLCrashLogWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashLogWriter.m; path = Sources/PLCrashLogWriter.m; sourceTree = "<group>"; };
+		7FDA179BE4F81A56775797B5B9A951A7 /* CardExpirationDateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardExpirationDateFormatter.swift; path = Source/Formatter/CardExpirationDateFormatter.swift; sourceTree = "<group>"; };
+		803C29D7AFB5A68E355571E4541302A8 /* DefaultAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAttributes.swift; path = Sources/Features/Attributes/DefaultAttributes.swift; sourceTree = "<group>"; };
 		8052A9C932B42F33F3B866326F807CEF /* Pods-My Demo App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-My Demo App.debug.xcconfig"; sourceTree = "<group>"; };
-		80DD0F6343F6772BE00A16B2FFB60E9C /* EasyTipView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTipView.debug.xcconfig; sourceTree = "<group>"; };
-		875E04A1994EC3D3F411E86449F1950E /* FormTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormTextField.debug.xcconfig; sourceTree = "<group>"; };
+		806238A862756752171B499D1F2BA09D /* BacktraceFileManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceFileManager.swift; path = Sources/Features/Repository/BacktraceFileManager.swift; sourceTree = "<group>"; };
+		8105321BB069154A2AA83411BE336BD7 /* PLCrashFrameDWARFUnwind.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashFrameDWARFUnwind.cpp; path = Sources/PLCrashFrameDWARFUnwind.cpp; sourceTree = "<group>"; };
+		81299384333593394B5B8830C33752E9 /* PLCrashReportRegisterInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportRegisterInfo.h; path = Sources/include/PLCrashReportRegisterInfo.h; sourceTree = "<group>"; };
+		81BD048CBFAF261DC10CAEC5547FCF8D /* PLCrashFrameStackUnwind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashFrameStackUnwind.h; path = Sources/PLCrashFrameStackUnwind.h; sourceTree = "<group>"; };
+		829D1B7AAD82A317F921A409C9820101 /* PLCrashReportMachineInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportMachineInfo.m; path = Sources/PLCrashReportMachineInfo.m; sourceTree = "<group>"; };
+		82B2C745A0FA6DE966F3349BCCE9E783 /* BacktraceReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceReport.swift; path = Sources/Features/Repository/Model/BacktraceReport.swift; sourceTree = "<group>"; };
+		8344CD34E3A8C980B4AF3C5EEA85F61E /* FormTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FormTextField.modulemap; sourceTree = "<group>"; };
+		83C12240D51131B66713C0FFB37410F1 /* PLCrashAsyncDwarfFDE.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncDwarfFDE.hpp; path = Sources/PLCrashAsyncDwarfFDE.hpp; sourceTree = "<group>"; };
+		843562335BB0895B42F6D8A124409DA2 /* FormTextFieldTypeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldTypeManager.swift; path = Source/FormTextFieldTypeManager.swift; sourceTree = "<group>"; };
+		84B44BD3B9F69AAD620A2F42E7EA2CCB /* Backtrace-PLCrashReporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Backtrace-PLCrashReporter.release.xcconfig"; sourceTree = "<group>"; };
+		85BF1E4A50771A8C8B3D110EF58EEA4E /* PLCrashUncaughtExceptionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashUncaughtExceptionHandler.h; path = Sources/PLCrashUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		876E41BB9BD91C68F781A2C2F122B806 /* PLCrashReporterConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReporterConfig.h; path = Sources/include/PLCrashReporterConfig.h; sourceTree = "<group>"; };
+		8898F5E00BCA17538AD4B1B2FE8A0F38 /* PLCrashAsyncDwarfFDE.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfFDE.cpp; path = Sources/PLCrashAsyncDwarfFDE.cpp; sourceTree = "<group>"; };
+		88AE64E2E0000577ED979D262F2F0929 /* FormTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormTextField.debug.xcconfig; sourceTree = "<group>"; };
+		89668713B75FF60EDC8A4C2A16ACF896 /* BacktraceResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceResult.swift; path = Sources/Public/BacktraceResult.swift; sourceTree = "<group>"; };
 		8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyTipView; path = EasyTipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F1FB6C8AB648D0A6ECDDEE2C2E55C65 /* FormTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormTextField-prefix.pch"; sourceTree = "<group>"; };
+		8D856DF996AB1EC83EB679CCE37C4E5C /* BacktraceClientDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceClientDelegate.swift; path = Sources/Public/BacktraceClientDelegate.swift; sourceTree = "<group>"; };
+		8DF6E74BB2B9A1DA65A973F7B3460E3B /* CardNumberFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardNumberFormatter.swift; path = Source/Formatter/CardNumberFormatter.swift; sourceTree = "<group>"; };
+		8E3144C859897D45A758FF3B40A6C789 /* PLCrashAsyncSignalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncSignalInfo.h; path = Sources/PLCrashAsyncSignalInfo.h; sourceTree = "<group>"; };
+		8FA1DC631359375A9E8F862432F32571 /* Backtrace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backtrace-prefix.pch"; sourceTree = "<group>"; };
+		9072F2C874956EC9EC815A80ACAE96EE /* PLCrashMachExceptionServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashMachExceptionServer.m; path = Sources/PLCrashMachExceptionServer.m; sourceTree = "<group>"; };
+		907F87B00592B70485DF9BD9062F03D3 /* PLCrashAsyncThread_x86.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncThread_x86.h; path = Sources/PLCrashAsyncThread_x86.h; sourceTree = "<group>"; };
+		914FC086AF8A7E785341E7C736FC0BE5 /* ReportMetadataStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReportMetadataStorage.swift; path = Sources/Public/Internal/ReportMetadataStorage.swift; sourceTree = "<group>"; };
+		92C425E9859DD3A1552CCCDA5AE14FD6 /* PLCrashReportFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportFormatter.h; path = Sources/include/PLCrashReportFormatter.h; sourceTree = "<group>"; };
+		9467266830E0B8BC94A6E787CEA96ED4 /* Backtrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Backtrace.debug.xcconfig; sourceTree = "<group>"; };
+		94908CDC8A00D63D631506CB198D8B1A /* PLCrashReportBinaryImageInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportBinaryImageInfo.m; path = Sources/PLCrashReportBinaryImageInfo.m; sourceTree = "<group>"; };
+		957C2BB3E38BDD7A8929CA8A8DACE999 /* dwarf_opstream.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = dwarf_opstream.hpp; path = Sources/dwarf_opstream.hpp; sourceTree = "<group>"; };
+		9674F37E93C7C9CC0C9C1DD37F4386D8 /* PLCrashHostInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashHostInfo.h; path = Sources/PLCrashHostInfo.h; sourceTree = "<group>"; };
+		97642BFB2C7C90698A6B38E9D04D7BD1 /* PLCrashSysctl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashSysctl.c; path = Sources/PLCrashSysctl.c; sourceTree = "<group>"; };
+		97A46D59B5B27523715BC4C2588331F0 /* Repository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Sources/Public/Internal/Repository.swift; sourceTree = "<group>"; };
+		983F86C99C36FC40443B6F8C9A86B1A3 /* PLCrashMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashMacros.h; path = Sources/include/PLCrashMacros.h; sourceTree = "<group>"; };
+		9C29912FDE86D5786C13901D1F149AD0 /* DebuggerChecker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebuggerChecker.swift; path = Sources/Public/Internal/DebuggerChecker.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A48D6DBD4027BBC0634901EF76772DA4 /* InputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputValidator.swift; path = Source/InputValidator/InputValidator.swift; sourceTree = "<group>"; };
-		A5C67C7148EBF61D65AFDBA805955850 /* CardExpirationDateInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardExpirationDateInputValidator.swift; path = Source/InputValidator/CardExpirationDateInputValidator.swift; sourceTree = "<group>"; };
-		A842EC85501BAD55D08022A936D196AE /* upload-dsym.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "upload-dsym.sh"; sourceTree = "<group>"; };
-		A85FC83D3F4D2E755DC2EF1055EF5430 /* EasyTipView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTipView-dummy.m"; sourceTree = "<group>"; };
+		9DF2578ACA5B415B731A49E3D93D7975 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Public/Internal/Result.swift; sourceTree = "<group>"; };
+		9EEE8AFBBE4529055FE4375292E308CE /* PLCrashUncaughtExceptionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashUncaughtExceptionHandler.m; path = Sources/PLCrashUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		9F5F23A66ADF650D958A1494BF4468DC /* BacktraceLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceLogger.swift; path = Sources/Public/BacktraceLogger.swift; sourceTree = "<group>"; };
+		9F73E9D0E1800D047387FB4D2BD8F5EC /* PLCrashAsyncDwarfCFAState.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfCFAState.cpp; path = Sources/PLCrashAsyncDwarfCFAState.cpp; sourceTree = "<group>"; };
+		A05CF14E9DDB50F192B48F47A8DCDD45 /* PLCrashReportRegisterInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportRegisterInfo.m; path = Sources/PLCrashReportRegisterInfo.m; sourceTree = "<group>"; };
+		A0B750D9B74AE4B526214F79ABE2989A /* PLCrashReportSymbolInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportSymbolInfo.h; path = Sources/include/PLCrashReportSymbolInfo.h; sourceTree = "<group>"; };
+		A13251D3573396B298B7A97586D63BAE /* PLCrashNamespace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashNamespace.h; path = Sources/include/PLCrashNamespace.h; sourceTree = "<group>"; };
+		A2920C23129BB1FE5211A30F747D1207 /* BacktraceDatabaseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceDatabaseSettings.swift; path = Sources/Public/BacktraceDatabaseSettings.swift; sourceTree = "<group>"; };
+		A3D8CCE9B7A736CAFFE9ABD2BF4180AF /* PLCrashSysctl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashSysctl.h; path = Sources/PLCrashSysctl.h; sourceTree = "<group>"; };
+		A44C922D17DF61D4E47488D7B23D5E97 /* PLCrashAsyncImageList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncImageList.h; path = Sources/PLCrashAsyncImageList.h; sourceTree = "<group>"; };
+		A4668DD1590ED2C24C8F5FA00B08B163 /* PLCrashReportMachExceptionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportMachExceptionInfo.m; path = Sources/PLCrashReportMachExceptionInfo.m; sourceTree = "<group>"; };
+		A54F2160F19661555C3DF72874550ED3 /* UIKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKitExtensions.swift; path = Sources/EasyTipView/UIKitExtensions.swift; sourceTree = "<group>"; };
+		A5AEF139F9C178B629F1301F253EC083 /* PLCrashReportSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportSystemInfo.h; path = Sources/include/PLCrashReportSystemInfo.h; sourceTree = "<group>"; };
+		A5F418A68A9C08CE136C2B0A3B251086 /* Backtrace-PLCrashReporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backtrace-PLCrashReporter-umbrella.h"; sourceTree = "<group>"; };
+		A68127A204E96A498A6563A48D4DB350 /* Dispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dispatcher.swift; path = Sources/Features/Dispatching/Dispatcher.swift; sourceTree = "<group>"; };
+		A8637FFC8CEA815924A61B41AE400B67 /* Backtrace-PLCrashReporter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backtrace-PLCrashReporter-prefix.pch"; sourceTree = "<group>"; };
 		A9375FF332035949149144CAED1DF673 /* Pods-My Demo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-My Demo App.release.xcconfig"; sourceTree = "<group>"; };
-		BC72744CCDDE366F35CD6E34806AB602 /* EasyTipView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyTipView.modulemap; sourceTree = "<group>"; };
-		BF401019ACB0A7FAA774E4515D34668B /* FormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FormTextField.h; path = Source/FormTextField.h; sourceTree = "<group>"; };
-		C5513A494CE5A2E35576B65C445F2502 /* TestFairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TestFairy.release.xcconfig; sourceTree = "<group>"; };
-		CA9D235DBC1464E1AB656028F8BE42B0 /* InputValidatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputValidatable.swift; path = Source/InputValidator/InputValidatable.swift; sourceTree = "<group>"; };
-		CC5D2E23D96A94045CF5E02BBFBF01E1 /* FormTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FormTextField-Info.plist"; sourceTree = "<group>"; };
+		AA74ED24601495F4399AF31319D0A01F /* Attachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = Sources/Features/Repository/Model/Attachment.swift; sourceTree = "<group>"; };
+		AB70ABC3A2001873133736E201A2EED6 /* BacktraceNetworkClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceNetworkClient.swift; path = Sources/Features/Network/BacktraceNetworkClient.swift; sourceTree = "<group>"; };
+		AD284D14582020D05A694A2681C6214F /* PLCrashAsyncDwarfPrimitives.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncDwarfPrimitives.hpp; path = Sources/PLCrashAsyncDwarfPrimitives.hpp; sourceTree = "<group>"; };
+		AD766985D6AF1E7CB21572C7C090C017 /* PLCrashFrameCompactUnwind.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashFrameCompactUnwind.c; path = Sources/PLCrashFrameCompactUnwind.c; sourceTree = "<group>"; };
+		AE57A7A420C4693B745D68AFCB7D918B /* RequiredInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredInputValidator.swift; path = Source/InputValidator/RequiredInputValidator.swift; sourceTree = "<group>"; };
+		AF66D5502097659749F49A4D24F0424D /* AttachmentsStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentsStorage.swift; path = Sources/Features/Client/Model/AttachmentsStorage.swift; sourceTree = "<group>"; };
+		B09A07AE3EEFC233C8122A942520739A /* PLCrashReporterConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReporterConfig.m; path = Sources/PLCrashReporterConfig.m; sourceTree = "<group>"; };
+		B0E72D824C3AAF190A1F02CFDFD5C917 /* EasyTipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTipView.swift; path = Sources/EasyTipView/EasyTipView.swift; sourceTree = "<group>"; };
+		B2E2B58B01D7CB774554AA7BCBF1BAE2 /* URLSession+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSession+Sync.swift"; path = "Sources/Features/Extensions/URLSession+Sync.swift"; sourceTree = "<group>"; };
+		B3E3C40C3A1D5A1AB81C1330891ADE83 /* Backtrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Backtrace.h; path = "Backtrace-iOS/Backtrace.h"; sourceTree = "<group>"; };
+		B3E404B69EBF609562BEE53DE7807EE8 /* PLCrashReportMachExceptionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportMachExceptionInfo.h; path = Sources/include/PLCrashReportMachExceptionInfo.h; sourceTree = "<group>"; };
+		B3E6256A8906AE1C7D71A0757AFF8F8A /* EasyTipView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyTipView.modulemap; sourceTree = "<group>"; };
+		B518754D47CE715909FA83C0A35270AC /* NetworkReachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachability.swift; path = Sources/Features/Attributes/NetworkReachability.swift; sourceTree = "<group>"; };
+		B5CBB4311C13C48937C721478101A197 /* Backtrace-PLCrashReporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Backtrace-PLCrashReporter.modulemap"; sourceTree = "<group>"; };
+		B8844077148F56D26570CBBAED543767 /* PLCrashAsyncLinkedList.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncLinkedList.hpp; path = Sources/PLCrashAsyncLinkedList.hpp; sourceTree = "<group>"; };
+		BE25FD97AA09B84B9F35732ED4C5C631 /* PLCrashAsyncDwarfCFAState.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncDwarfCFAState.hpp; path = Sources/PLCrashAsyncDwarfCFAState.hpp; sourceTree = "<group>"; };
+		BE9FE2E3525075F6C2EA54CF8C430EDD /* PLCrashAsyncDwarfEncoding.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncDwarfEncoding.hpp; path = Sources/PLCrashAsyncDwarfEncoding.hpp; sourceTree = "<group>"; };
+		BFB0C8DB59C1C9C950368BA61C45AC90 /* BacktraceApiProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceApiProtocol.swift; path = Sources/Public/Internal/BacktraceApiProtocol.swift; sourceTree = "<group>"; };
+		C04D1E36C26E9AC884DCC78A8BC9788D /* Backtrace-PLCrashReporter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Backtrace-PLCrashReporter"; path = Backtrace_PLCrashReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07C9090856A7BAECF86385A18AA9E6C /* BacktraceReporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceReporter.swift; path = Sources/Features/Client/BacktraceReporter.swift; sourceTree = "<group>"; };
+		C4C30F9A2AC6BDC7F97A4982C23D5781 /* PLCrashAsyncDwarfCIE.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PLCrashAsyncDwarfCIE.hpp; path = Sources/PLCrashAsyncDwarfCIE.hpp; sourceTree = "<group>"; };
+		C4D127459759D1C7BB2CAE77F2AA3EF9 /* PLCrashMachExceptionPort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashMachExceptionPort.m; path = Sources/PLCrashMachExceptionPort.m; sourceTree = "<group>"; };
+		C73A07C7BCD665C1A8416421C3836728 /* PLCrashFrameWalker.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashFrameWalker.c; path = Sources/PLCrashFrameWalker.c; sourceTree = "<group>"; };
+		C8944CFBE2C4601DD943196BEBD4E6D9 /* PLCrashAsyncMObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncMObject.h; path = Sources/PLCrashAsyncMObject.h; sourceTree = "<group>"; };
+		CC53CB1B0819FBBFADB4DA94C0A1FE68 /* PLCrashAsyncSymbolication.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncSymbolication.c; path = Sources/PLCrashAsyncSymbolication.c; sourceTree = "<group>"; };
+		CC692443B25CA69FEDB9DB8B95A7683D /* PLCrashReportMachineInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportMachineInfo.h; path = Sources/include/PLCrashReportMachineInfo.h; sourceTree = "<group>"; };
+		CCC93EFE4AF29AF3F4CD0C0DC45C9054 /* PLCrashCompatConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashCompatConstants.h; path = Sources/PLCrashCompatConstants.h; sourceTree = "<group>"; };
 		CCD3D8E677D2E4663EAE24FA79031144 /* Pods-My Demo App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-My Demo App-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1F354524D626B360170C6F2C99C26EF /* Pods-My Demo App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-My Demo App-frameworks.sh"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D8D0CA36E49E1E0B2AE8CA3C8D102C1D /* EasyTipView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyTipView-Info.plist"; sourceTree = "<group>"; };
-		DDB8C2C0A289EB5DB170F698EC0383DB /* FormTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FormTextField-dummy.m"; sourceTree = "<group>"; };
-		E5610BFF0CDE65D0E9B583AD8D755731 /* EasyTipView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTipView.release.xcconfig; sourceTree = "<group>"; };
+		D53D1DE9299A0297DF9AE95CEECAB2D1 /* Backtrace-PLCrashReporter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Backtrace-PLCrashReporter-Info.plist"; sourceTree = "<group>"; };
+		D545AB2AAB2FF56DB15AA0E6AA40BCE4 /* PLCrashLogWriterEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashLogWriterEncoding.h; path = Sources/PLCrashLogWriterEncoding.h; sourceTree = "<group>"; };
+		D737F6FB80CCA97A4B999C14FA5AB57F /* PLCrashReportExceptionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportExceptionInfo.h; path = Sources/include/PLCrashReportExceptionInfo.h; sourceTree = "<group>"; };
+		D741938057E40E202E52B1B182371B44 /* PLCrashAsyncObjCSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncObjCSection.h; path = Sources/PLCrashAsyncObjCSection.h; sourceTree = "<group>"; };
+		D75F71D22EE51376E7EBBCAC8708A8BB /* PLCrashAsyncMachOString.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncMachOString.c; path = Sources/PLCrashAsyncMachOString.c; sourceTree = "<group>"; };
+		D76A2230FA79CB216826339B071BEBDB /* TestFairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TestFairy.debug.xcconfig; sourceTree = "<group>"; };
+		D85D4E47F2F09723830308537404555A /* PLCrashReportBinaryImageInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashReportBinaryImageInfo.h; path = Sources/include/PLCrashReportBinaryImageInfo.h; sourceTree = "<group>"; };
+		D8699081F4BD6E69CBFBF4EBC10986D3 /* PLCrashAsync.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsync.c; path = Sources/PLCrashAsync.c; sourceTree = "<group>"; };
+		DAB0AC3623EC0949B321650867C577AF /* PLCrashAsyncDwarfCIE.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PLCrashAsyncDwarfCIE.cpp; path = Sources/PLCrashAsyncDwarfCIE.cpp; sourceTree = "<group>"; };
+		DB3CBADEB5A883D5BF38EFB1217C86C0 /* Backtrace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Backtrace-Info.plist"; sourceTree = "<group>"; };
+		DC474AEDF0AEAC17C3E0D2FC06D73F0D /* PLCrashAsyncMachExceptionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashAsyncMachExceptionInfo.h; path = Sources/PLCrashAsyncMachExceptionInfo.h; sourceTree = "<group>"; };
+		DD438DD7465C947BF667F3928CCAD480 /* PLCrashReportStackFrameInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportStackFrameInfo.m; path = Sources/PLCrashReportStackFrameInfo.m; sourceTree = "<group>"; };
+		DF1D9A20C161FFDC8389AD14C2B7A188 /* PLCrashAsyncMachExceptionInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncMachExceptionInfo.c; path = Sources/PLCrashAsyncMachExceptionInfo.c; sourceTree = "<group>"; };
+		DFBCDAE8A2D5A5B4769075A9B3A0F735 /* PLCrashProcessInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashProcessInfo.m; path = Sources/PLCrashProcessInfo.m; sourceTree = "<group>"; };
+		E121AB84ADEB699A675EB5CB65A1DD75 /* FormTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormTextField-prefix.pch"; sourceTree = "<group>"; };
+		E329DCE15C30F40375C81B207E545960 /* dwarf_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dwarf_private.h; path = Sources/dwarf_private.h; sourceTree = "<group>"; };
+		E379D2935C2E490FEDCA6B9CEE03E046 /* dwarf_stack.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = dwarf_stack.hpp; path = Sources/dwarf_stack.hpp; sourceTree = "<group>"; };
+		E53DABCE15A75B41EB5ADE0E70A7D6D9 /* EasyTipView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTipView.debug.xcconfig; sourceTree = "<group>"; };
+		E5DA26929F6DFF175C4C8CE1C593241B /* PLCrashReportSymbolInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLCrashReportSymbolInfo.m; path = Sources/PLCrashReportSymbolInfo.m; sourceTree = "<group>"; };
+		E6ADF91BDE3DA1001266F5532E0DC4A3 /* PLCrashLogWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashLogWriter.h; path = Sources/PLCrashLogWriter.h; sourceTree = "<group>"; };
+		E7C42471AB8E9EF2EEEB1BF80A50DDFE /* FormTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FormTextField-dummy.m"; sourceTree = "<group>"; };
+		E831328401C115F8195616D4D5E68339 /* mach_exc_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mach_exc_x86_64.h; path = Sources/Autogenerated/mach_exc_x86_64.h; sourceTree = "<group>"; };
+		E96FE93247118550680D0B3BBE1A06C3 /* PLCrashAsyncThread_arm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncThread_arm.c; path = Sources/PLCrashAsyncThread_arm.c; sourceTree = "<group>"; };
+		EA1ED0FED87DF082202F856CFCBF0104 /* PLCrashMachExceptionPortSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashMachExceptionPortSet.h; path = Sources/PLCrashMachExceptionPortSet.h; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EEA13E6F79307F3F3AE7212D7045E4FF /* TestFairy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestFairy.h; sourceTree = "<group>"; };
-		F70DC0F03B605322D6372EB28E259A48 /* FormTextFieldClearButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldClearButton.swift; path = Source/FormTextFieldClearButton.swift; sourceTree = "<group>"; };
-		FD1E5271B838B2DB9FF936EA76AD4ED7 /* FormTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextField.swift; path = Source/FormTextField.swift; sourceTree = "<group>"; };
+		EAE1A203310B7A6B6443ED3807B64EAF /* TestFairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TestFairy.release.xcconfig; sourceTree = "<group>"; };
+		ECD88925A3E9ADE83E7B94E46917726D /* CrashReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CrashReporter.m; path = Sources/CrashReporter.m; sourceTree = "<group>"; };
+		ED8F08BDFC5B3AE56894843F92F58353 /* PLCrashAsyncMObject.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncMObject.c; path = Sources/PLCrashAsyncMObject.c; sourceTree = "<group>"; };
+		EE775BC165D9F7C0E3C0B6773AA85A90 /* PLCrashAsyncSignalInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; name = PLCrashAsyncSignalInfo.c; path = Sources/PLCrashAsyncSignalInfo.c; sourceTree = "<group>"; };
+		F05726822AB9832B70D80AD2212053FC /* Backtrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backtrace-umbrella.h"; sourceTree = "<group>"; };
+		F0C8068B367A316406984C07A20C83D7 /* Backtrace */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Backtrace; path = Backtrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F6F8824C788150190DE5BA49E8459C /* Dispatching.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dispatching.swift; path = Sources/Public/Internal/Dispatching.swift; sourceTree = "<group>"; };
+		F588DEC9EB234E74BF05AF9B7184F71A /* BacktraceRateLimiter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceRateLimiter.swift; path = Sources/Features/Network/BacktraceRateLimiter.swift; sourceTree = "<group>"; };
+		F63D18BB532848308E84CDB2CBD9D66A /* InputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputValidator.swift; path = Source/InputValidator/InputValidator.swift; sourceTree = "<group>"; };
+		FBB9513A259E1546FBDF8B63E46162DF /* PLCrashFrameDWARFUnwind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCrashFrameDWARFUnwind.h; path = Sources/PLCrashFrameDWARFUnwind.h; sourceTree = "<group>"; };
+		FDC557579B49EAE16B061AC54162A55C /* System.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = System.swift; path = Sources/Features/Attributes/System.swift; sourceTree = "<group>"; };
+		FE7BF038361BB8E2A37238012CB88883 /* Backtrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Backtrace.release.xcconfig; sourceTree = "<group>"; };
+		FE9125AF2D99ED8D93372D40F3928E38 /* BacktraceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BacktraceClient.swift; path = Sources/Public/BacktraceClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B55D7BEDBCA96D459578D59D01A16DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6C6C996DD1430A22EB84F558F2D8C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8283A41750A8B79B91F5C8185B949E4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,11 +531,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89980E0E389DB8E7E9CCFAA24AE17B72 /* Frameworks */ = {
+		9D689D602417B3CA65EE7B5DE737F4ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3B91AF4FB2D4664B800C6769C7F9A1 /* Foundation.framework in Frameworks */,
+				F653BF9A5FA6D2C51E986C44FD6C2BB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0CBFCF0444D125FE7E14A9D3ADFD1C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96097A683E29C1DDCC4193C2F38D630 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +558,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0144F02364E97F5F62B3DF2188006170 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5CBB4311C13C48937C721478101A197 /* Backtrace-PLCrashReporter.modulemap */,
+				215A779EC720E8333AE40FB116593A8A /* Backtrace-PLCrashReporter-dummy.m */,
+				D53D1DE9299A0297DF9AE95CEECAB2D1 /* Backtrace-PLCrashReporter-Info.plist */,
+				A8637FFC8CEA815924A61B41AE400B67 /* Backtrace-PLCrashReporter-prefix.pch */,
+				A5F418A68A9C08CE136C2B0A3B251086 /* Backtrace-PLCrashReporter-umbrella.h */,
+				182F88617BB7137D042B7B18CA81501E /* Backtrace-PLCrashReporter.debug.xcconfig */,
+				84B44BD3B9F69AAD620A2F42E7EA2CCB /* Backtrace-PLCrashReporter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Backtrace-PLCrashReporter";
+			sourceTree = "<group>";
+		};
+		0D059CA6A4652E275A036B41D8547951 /* TestFairy */ = {
+			isa = PBXGroup;
+			children = (
+				7BD5B726BC33A6E0FEE8000B887A1AD5 /* TestFairy.h */,
+				DE5A307CD464911FE403B707FFC51EDC /* Resources */,
+				BA453D52255399125D4FEACAC9E49609 /* Support Files */,
+			);
+			name = TestFairy;
+			path = TestFairy;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,34 +592,260 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1BFD83EFBC79D09119BBF355A7AA559D /* FormTextField */ = {
+		18669EDC96AB50ADF4B57DF94262F04A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				40FD361967E7E26C59DC269CB78BE69F /* CardExpirationDateFormatter.swift */,
-				A5C67C7148EBF61D65AFDBA805955850 /* CardExpirationDateInputValidator.swift */,
-				1B31D5C9DE65C89ED965DDEAF59ECD59 /* CardNumberFormatter.swift */,
-				189DEC451880F4FA5EE91D853EF1BB46 /* DecimalInputValidator.swift */,
-				03B943D5D220C51E9944C2C56BBC1074 /* Formattable.swift */,
-				BF401019ACB0A7FAA774E4515D34668B /* FormTextField.h */,
-				FD1E5271B838B2DB9FF936EA76AD4ED7 /* FormTextField.swift */,
-				F70DC0F03B605322D6372EB28E259A48 /* FormTextFieldClearButton.swift */,
-				430D8A511A9CB2D156A43B47E9383A43 /* FormTextFieldTypeManager.swift */,
-				CA9D235DBC1464E1AB656028F8BE42B0 /* InputValidatable.swift */,
-				A48D6DBD4027BBC0634901EF76772DA4 /* InputValidator.swift */,
-				3C3E9FE8C556882B66312C2DE5903F82 /* RequiredInputValidator.swift */,
-				7E4F2480282D0900470CAC6599B1CD4A /* Validation.swift */,
-				61ECAF36A36335BE019E59C383D25B26 /* Support Files */,
+				B3E6256A8906AE1C7D71A0757AFF8F8A /* EasyTipView.modulemap */,
+				06E9D3FAAB2462FB45824B8B0F69CFB8 /* EasyTipView-dummy.m */,
+				1008065EE2483C2B4F7F6E9494933E2E /* EasyTipView-Info.plist */,
+				0D2C3138642764034AB2C0DE5BF2AA37 /* EasyTipView-prefix.pch */,
+				1BC4AA5426C067E7A4D32EA61911484B /* EasyTipView-umbrella.h */,
+				E53DABCE15A75B41EB5ADE0E70A7D6D9 /* EasyTipView.debug.xcconfig */,
+				217ED2F97EBEFA170ABD51599F1C89BA /* EasyTipView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyTipView";
+			sourceTree = "<group>";
+		};
+		27EDC9550B552205DFDEAED6A53FA159 /* Backtrace */ = {
+			isa = PBXGroup;
+			children = (
+				52D6BBA87C93E5F69CECC29F1CFEACB2 /* Annotations.swift */,
+				AA74ED24601495F4399AF31319D0A01F /* Attachment.swift */,
+				771F4629D48D533754F7983691633526 /* AttachmentBookmarkHandler.swift */,
+				AF66D5502097659749F49A4D24F0424D /* AttachmentsStorage.swift */,
+				5545B06157B55C79AFB05198D3259B11 /* AttributesProvider.swift */,
+				75C21BCA1B1ECACDE8CD73BDF597415F /* AttributesStorage.swift */,
+				B3E3C40C3A1D5A1AB81C1330891ADE83 /* Backtrace.h */,
+				6FD0C01C7170EA7C326A218FD75C10A3 /* BacktraceApi.swift */,
+				BFB0C8DB59C1C9C950368BA61C45AC90 /* BacktraceApiProtocol.swift */,
+				FE9125AF2D99ED8D93372D40F3928E38 /* BacktraceClient.swift */,
+				54721B9247E476C514E2358EFB68190C /* BacktraceClientConfiguration.swift */,
+				7B38581F4ECFDCA8900005AED2E8D86B /* BacktraceClientCustomizing.swift */,
+				8D856DF996AB1EC83EB679CCE37C4E5C /* BacktraceClientDelegate.swift */,
+				16D05D41EE586FAC47DD778A33E5920A /* BacktraceCrashReporter.swift */,
+				42376341274AEAD2CDEBDC34C53ED898 /* BacktraceCredentials.swift */,
+				A2920C23129BB1FE5211A30F747D1207 /* BacktraceDatabaseSettings.swift */,
+				3AA2AF7918E39A535AE875898CA3456A /* BacktraceError.swift */,
+				806238A862756752171B499D1F2BA09D /* BacktraceFileManager.swift */,
+				9F5F23A66ADF650D958A1494BF4468DC /* BacktraceLogger.swift */,
+				AB70ABC3A2001873133736E201A2EED6 /* BacktraceNetworkClient.swift */,
+				4BB2AAF1B8C59C1E0A5C39AEAB067B52 /* BacktraceOomWatcher.swift */,
+				F588DEC9EB234E74BF05AF9B7184F71A /* BacktraceRateLimiter.swift */,
+				82B2C745A0FA6DE966F3349BCCE9E783 /* BacktraceReport.swift */,
+				C07C9090856A7BAECF86385A18AA9E6C /* BacktraceReporter.swift */,
+				73C8353E9B7259DBA9B147097C33A208 /* BacktraceReportStatus.swift */,
+				223928E6305580E4B3FD87D0C46FAECD /* BacktraceResponse.swift */,
+				89668713B75FF60EDC8A4C2A16ACF896 /* BacktraceResult.swift */,
+				3A32CF92679E6F86CD3A2B8605E714A9 /* BacktraceWatcher.swift */,
+				23D604BC5A08442A2349168D5A0E6386 /* CrashReporting.swift */,
+				9C29912FDE86D5786C13901D1F149AD0 /* DebuggerChecker.swift */,
+				803C29D7AFB5A68E355571E4541302A8 /* DefaultAttributes.swift */,
+				A68127A204E96A498A6563A48D4DB350 /* Dispatcher.swift */,
+				F4F6F8824C788150190DE5BA49E8459C /* Dispatching.swift */,
+				6A060F7981D383FF8A0C0F835CAA54FD /* Foundation+Extensions.swift */,
+				4D1111F7991681DD374C8A2A9FC1CBAE /* HttpMethod.swift */,
+				3E6787541958C7DF1E151D02C9F6E9D5 /* Map+KeyPath.swift */,
+				3280B0EA2228E577E09A2F4018B8453F /* MultipartRequest.swift */,
+				B518754D47CE715909FA83C0A35270AC /* NetworkReachability.swift */,
+				5DB85D48CB2BFEC144BB52E9B3B95A92 /* PersistentRepository.swift */,
+				3ABA2C749EE5BFB4F57DDEA9307EB18D /* ReportingPolicy.swift */,
+				914FC086AF8A7E785341E7C736FC0BE5 /* ReportMetadataStorage.swift */,
+				97A46D59B5B27523715BC4C2588331F0 /* Repository.swift */,
+				9DF2578ACA5B415B731A49E3D93D7975 /* Result.swift */,
+				00B99CF4488078563FD0B410465F04B3 /* SignalContext.swift */,
+				708341B164AD1A85031BB1A15A8258C6 /* Store.swift */,
+				FDC557579B49EAE16B061AC54162A55C /* System.swift */,
+				B2E2B58B01D7CB774554AA7BCBF1BAE2 /* URLSession+Sync.swift */,
+				CDF5577DD4958B3BF4735B8B196F2A4F /* Resources */,
+				372CEFFC42EBAA18748F9C3A6E8D0568 /* Support Files */,
+			);
+			name = Backtrace;
+			path = Backtrace;
+			sourceTree = "<group>";
+		};
+		372CEFFC42EBAA18748F9C3A6E8D0568 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DA93D8DCDDE0FDA4E4DE08C150174B6 /* Backtrace.modulemap */,
+				27184878E20C07A79EF960B9F3EAF890 /* Backtrace-dummy.m */,
+				DB3CBADEB5A883D5BF38EFB1217C86C0 /* Backtrace-Info.plist */,
+				8FA1DC631359375A9E8F862432F32571 /* Backtrace-prefix.pch */,
+				F05726822AB9832B70D80AD2212053FC /* Backtrace-umbrella.h */,
+				9467266830E0B8BC94A6E787CEA96ED4 /* Backtrace.debug.xcconfig */,
+				FE7BF038361BB8E2A37238012CB88883 /* Backtrace.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Backtrace";
+			sourceTree = "<group>";
+		};
+		3DED1B2397EF6840D94B5D12ECE051C9 /* Backtrace-PLCrashReporter */ = {
+			isa = PBXGroup;
+			children = (
+				00886FE68EE1054380381B24F97F31AB /* CrashReporter.h */,
+				ECD88925A3E9ADE83E7B94E46917726D /* CrashReporter.m */,
+				4A7712CFD3C3B786E817CDC441123733 /* dwarf_opstream.cpp */,
+				957C2BB3E38BDD7A8929CA8A8DACE999 /* dwarf_opstream.hpp */,
+				E329DCE15C30F40375C81B207E545960 /* dwarf_private.h */,
+				E379D2935C2E490FEDCA6B9CEE03E046 /* dwarf_stack.hpp */,
+				19E2D7B049B41A1087A0B749E7F112C7 /* mach_exc.c */,
+				454478CF6DA70E5FFEFFE700C7660C7B /* mach_exc.h */,
+				477FA9733A6650047560FD6BFE39215E /* mach_exc_i386.h */,
+				E831328401C115F8195616D4D5E68339 /* mach_exc_x86_64.h */,
+				D8699081F4BD6E69CBFBF4EBC10986D3 /* PLCrashAsync.c */,
+				7118F02E942818894195B9BDC603EFB9 /* PLCrashAsync.h */,
+				73D5F2B9F4BA9BA12BC2A86F84283BDE /* PLCrashAsyncCompactUnwindEncoding.c */,
+				27BDCB83BC65B3EE6EDCF0640C01B354 /* PLCrashAsyncCompactUnwindEncoding.h */,
+				9F73E9D0E1800D047387FB4D2BD8F5EC /* PLCrashAsyncDwarfCFAState.cpp */,
+				BE25FD97AA09B84B9F35732ED4C5C631 /* PLCrashAsyncDwarfCFAState.hpp */,
+				383B3DD3E758D5431BCEDF69D4103DB0 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp */,
+				DAB0AC3623EC0949B321650867C577AF /* PLCrashAsyncDwarfCIE.cpp */,
+				C4C30F9A2AC6BDC7F97A4982C23D5781 /* PLCrashAsyncDwarfCIE.hpp */,
+				27A5B36BDB7942F686930A32FC464B75 /* PLCrashAsyncDwarfEncoding.cpp */,
+				BE9FE2E3525075F6C2EA54CF8C430EDD /* PLCrashAsyncDwarfEncoding.hpp */,
+				0A01D7B33D692E71B4E9A3ACFC2739B6 /* PLCrashAsyncDwarfExpression.cpp */,
+				6448374A1D18247484984D256387205B /* PLCrashAsyncDwarfExpression.hpp */,
+				8898F5E00BCA17538AD4B1B2FE8A0F38 /* PLCrashAsyncDwarfFDE.cpp */,
+				83C12240D51131B66713C0FFB37410F1 /* PLCrashAsyncDwarfFDE.hpp */,
+				49EB9A51D90167A199A2A406252E46CE /* PLCrashAsyncDwarfPrimitives.cpp */,
+				AD284D14582020D05A694A2681C6214F /* PLCrashAsyncDwarfPrimitives.hpp */,
+				26F07E71F174BFD074051C944C6BC3AC /* PLCrashAsyncImageList.cpp */,
+				A44C922D17DF61D4E47488D7B23D5E97 /* PLCrashAsyncImageList.h */,
+				B8844077148F56D26570CBBAED543767 /* PLCrashAsyncLinkedList.hpp */,
+				DF1D9A20C161FFDC8389AD14C2B7A188 /* PLCrashAsyncMachExceptionInfo.c */,
+				DC474AEDF0AEAC17C3E0D2FC06D73F0D /* PLCrashAsyncMachExceptionInfo.h */,
+				1E3BB0F40B0E62D803355A6A9C7275C9 /* PLCrashAsyncMachOImage.c */,
+				1FBEC7A3E177AAE83DE5C026B341698B /* PLCrashAsyncMachOImage.h */,
+				D75F71D22EE51376E7EBBCAC8708A8BB /* PLCrashAsyncMachOString.c */,
+				194E3F4C15131118D23847131A8C7BDD /* PLCrashAsyncMachOString.h */,
+				ED8F08BDFC5B3AE56894843F92F58353 /* PLCrashAsyncMObject.c */,
+				C8944CFBE2C4601DD943196BEBD4E6D9 /* PLCrashAsyncMObject.h */,
+				D741938057E40E202E52B1B182371B44 /* PLCrashAsyncObjCSection.h */,
+				7C50B8D8566EC8D856348B9D73202DB8 /* PLCrashAsyncObjCSection.mm */,
+				EE775BC165D9F7C0E3C0B6773AA85A90 /* PLCrashAsyncSignalInfo.c */,
+				8E3144C859897D45A758FF3B40A6C789 /* PLCrashAsyncSignalInfo.h */,
+				CC53CB1B0819FBBFADB4DA94C0A1FE68 /* PLCrashAsyncSymbolication.c */,
+				734AB9E32A1C75497321C7F20A5AAE16 /* PLCrashAsyncSymbolication.h */,
+				4A684D55CC0EFAFB16DC955CE17CA9EC /* PLCrashAsyncThread.c */,
+				228C0BAF2AE5DC719412F8013A0F981F /* PLCrashAsyncThread.h */,
+				E96FE93247118550680D0B3BBE1A06C3 /* PLCrashAsyncThread_arm.c */,
+				473349F7BD0D319D7819B91926D0EC09 /* PLCrashAsyncThread_arm.h */,
+				6FD279F9C6DC55601CC8A85626535D36 /* PLCrashAsyncThread_current.c */,
+				3D471BD03BC86739DBD5E6F6B8CA86E4 /* PLCrashAsyncThread_current.S */,
+				0C59C1CB509D140B446F00F64D8D665B /* PLCrashAsyncThread_current_defs.h */,
+				05E5BC84F8CCE83672BD60F4DB510F2E /* PLCrashAsyncThread_x86.c */,
+				907F87B00592B70485DF9BD9062F03D3 /* PLCrashAsyncThread_x86.h */,
+				CCC93EFE4AF29AF3F4CD0C0DC45C9054 /* PLCrashCompatConstants.h */,
+				5A9CBEECFB105B5DA0F48B9C4023D088 /* PLCrashFeatureConfig.h */,
+				AD766985D6AF1E7CB21572C7C090C017 /* PLCrashFrameCompactUnwind.c */,
+				24BE30EC8BEA69917130CED38B1C28E7 /* PLCrashFrameCompactUnwind.h */,
+				8105321BB069154A2AA83411BE336BD7 /* PLCrashFrameDWARFUnwind.cpp */,
+				FBB9513A259E1546FBDF8B63E46162DF /* PLCrashFrameDWARFUnwind.h */,
+				1780728F94E610F9B796CC02BC70C447 /* PLCrashFrameStackUnwind.c */,
+				81BD048CBFAF261DC10CAEC5547FCF8D /* PLCrashFrameStackUnwind.h */,
+				C73A07C7BCD665C1A8416421C3836728 /* PLCrashFrameWalker.c */,
+				4731CC305E2DFA37BCDF4BDA20FD4360 /* PLCrashFrameWalker.h */,
+				9674F37E93C7C9CC0C9C1DD37F4386D8 /* PLCrashHostInfo.h */,
+				6DC34BB024410035DD251D008AA9558C /* PLCrashHostInfo.m */,
+				E6ADF91BDE3DA1001266F5532E0DC4A3 /* PLCrashLogWriter.h */,
+				7FD69290606E9A71E28BDC32E44416A9 /* PLCrashLogWriter.m */,
+				7B90499C54E55B44CCA55829D25A70CB /* PLCrashLogWriterEncoding.c */,
+				D545AB2AAB2FF56DB15AA0E6AA40BCE4 /* PLCrashLogWriterEncoding.h */,
+				5C835E60287128926F55755C8AB35914 /* PLCrashMachExceptionPort.h */,
+				C4D127459759D1C7BB2CAE77F2AA3EF9 /* PLCrashMachExceptionPort.m */,
+				EA1ED0FED87DF082202F856CFCBF0104 /* PLCrashMachExceptionPortSet.h */,
+				00AA5EA212E66A652288F0AD04C012F6 /* PLCrashMachExceptionPortSet.m */,
+				10EE1219A6536281CA9001279394D356 /* PLCrashMachExceptionServer.h */,
+				9072F2C874956EC9EC815A80ACAE96EE /* PLCrashMachExceptionServer.m */,
+				983F86C99C36FC40443B6F8C9A86B1A3 /* PLCrashMacros.h */,
+				A13251D3573396B298B7A97586D63BAE /* PLCrashNamespace.h */,
+				325D26B392DA5E05E5E7FDE48456DA0D /* PLCrashProcessInfo.h */,
+				DFBCDAE8A2D5A5B4769075A9B3A0F735 /* PLCrashProcessInfo.m */,
+				012E4568CE8F94426B1E9F8486C43D2B /* PLCrashReport.h */,
+				693F29E38FAE370BF2B3BA6D1BD0E75A /* PLCrashReport.m */,
+				6AA1FF3136D33B5648256027D22524CA /* PLCrashReport.pb-c.c */,
+				16346EE9F6D95127080FFC1C8D6DA782 /* PLCrashReport.pb-c.h */,
+				082B92DEE5D2BD59159D0AFD6903B83E /* PLCrashReportApplicationInfo.h */,
+				509A10E7C128856AA6B26AC6821A478D /* PLCrashReportApplicationInfo.m */,
+				D85D4E47F2F09723830308537404555A /* PLCrashReportBinaryImageInfo.h */,
+				94908CDC8A00D63D631506CB198D8B1A /* PLCrashReportBinaryImageInfo.m */,
+				12F8DF6892378A52DDC85E02BAFCDE2A /* PLCrashReporter.h */,
+				3E17532BA5260F5698E721AF5E04FDD3 /* PLCrashReporter.m */,
+				876E41BB9BD91C68F781A2C2F122B806 /* PLCrashReporterConfig.h */,
+				B09A07AE3EEFC233C8122A942520739A /* PLCrashReporterConfig.m */,
+				55B95608B39FE512A1F21BA5DF5BB209 /* PLCrashReporterNSError.h */,
+				20565DF55BB22034F76F320E249CB0A2 /* PLCrashReporterNSError.m */,
+				D737F6FB80CCA97A4B999C14FA5AB57F /* PLCrashReportExceptionInfo.h */,
+				6CB29B64E66C18BCA2694D5D01242C64 /* PLCrashReportExceptionInfo.m */,
+				92C425E9859DD3A1552CCCDA5AE14FD6 /* PLCrashReportFormatter.h */,
+				B3E404B69EBF609562BEE53DE7807EE8 /* PLCrashReportMachExceptionInfo.h */,
+				A4668DD1590ED2C24C8F5FA00B08B163 /* PLCrashReportMachExceptionInfo.m */,
+				CC692443B25CA69FEDB9DB8B95A7683D /* PLCrashReportMachineInfo.h */,
+				829D1B7AAD82A317F921A409C9820101 /* PLCrashReportMachineInfo.m */,
+				03A07DE6B25ABDAD4F0B57589A6F60DA /* PLCrashReportProcessInfo.h */,
+				3C25C1F7D2918ACF8F6304002FC7F7D4 /* PLCrashReportProcessInfo.m */,
+				5F16B7B1A25736E461269C77CFCE0B25 /* PLCrashReportProcessorInfo.h */,
+				6F614ED5DA57AECB69BCB594ACF3CA7B /* PLCrashReportProcessorInfo.m */,
+				81299384333593394B5B8830C33752E9 /* PLCrashReportRegisterInfo.h */,
+				A05CF14E9DDB50F192B48F47A8DCDD45 /* PLCrashReportRegisterInfo.m */,
+				7BDC84BF8F65284B92CEC11701709648 /* PLCrashReportSignalInfo.h */,
+				2BB1F4A272725621A304D03C1A33EFD2 /* PLCrashReportSignalInfo.m */,
+				7C55C0DA5E312BC49B0079189263C4E1 /* PLCrashReportStackFrameInfo.h */,
+				DD438DD7465C947BF667F3928CCAD480 /* PLCrashReportStackFrameInfo.m */,
+				A0B750D9B74AE4B526214F79ABE2989A /* PLCrashReportSymbolInfo.h */,
+				E5DA26929F6DFF175C4C8CE1C593241B /* PLCrashReportSymbolInfo.m */,
+				A5AEF139F9C178B629F1301F253EC083 /* PLCrashReportSystemInfo.h */,
+				2BD12DBB0F7CF5277DCDB72FD2E766E7 /* PLCrashReportSystemInfo.m */,
+				1D253EE6F20C4F1B3FC77B19A63C0407 /* PLCrashReportTextFormatter.h */,
+				5FBD58C704EDD1ECE32A157C513B132C /* PLCrashReportTextFormatter.m */,
+				608BC058A4D9B06C035B407688E27D79 /* PLCrashReportThreadInfo.h */,
+				3CF01FE1C7B8E57FA14F1811ADE505EC /* PLCrashReportThreadInfo.m */,
+				7FBB3B542CE241CD21A5B016352E6822 /* PLCrashSignalHandler.h */,
+				23DA9B7885B90304EEDC7D301A328750 /* PLCrashSignalHandler.mm */,
+				97642BFB2C7C90698A6B38E9D04D7BD1 /* PLCrashSysctl.c */,
+				A3D8CCE9B7A736CAFFE9ABD2BF4180AF /* PLCrashSysctl.h */,
+				85BF1E4A50771A8C8B3D110EF58EEA4E /* PLCrashUncaughtExceptionHandler.h */,
+				9EEE8AFBBE4529055FE4375292E308CE /* PLCrashUncaughtExceptionHandler.m */,
+				1463B088A12D69FC663DBC268E808DFC /* protobuf-c.c */,
+				75F0D2EBEDF38EC9016C07C958B807F9 /* protobuf-c.h */,
+				0144F02364E97F5F62B3DF2188006170 /* Support Files */,
+			);
+			name = "Backtrace-PLCrashReporter";
+			path = "Backtrace-PLCrashReporter";
+			sourceTree = "<group>";
+		};
+		4310823B446D08481D8522DCF3F32904 /* FormTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA179BE4F81A56775797B5B9A951A7 /* CardExpirationDateFormatter.swift */,
+				7BBB203885C34877A8D3118AD3EDBAF6 /* CardExpirationDateInputValidator.swift */,
+				8DF6E74BB2B9A1DA65A973F7B3460E3B /* CardNumberFormatter.swift */,
+				5D3016124EFF8C97B482EB24654532D2 /* DecimalInputValidator.swift */,
+				5790901BB71737AF3C95D7DAAA302071 /* Formattable.swift */,
+				2532702E8812EA3FC6E6B4C19CE4D39E /* FormTextField.h */,
+				2927BF378C04201EC5C3EB1C8DE2EBA9 /* FormTextField.swift */,
+				124BF908277870F283104D6D8F240132 /* FormTextFieldClearButton.swift */,
+				843562335BB0895B42F6D8A124409DA2 /* FormTextFieldTypeManager.swift */,
+				2CE7C8F66DAFB8FBA74B3F7F42D77585 /* InputValidatable.swift */,
+				F63D18BB532848308E84CDB2CBD9D66A /* InputValidator.swift */,
+				AE57A7A420C4693B745D68AFCB7D918B /* RequiredInputValidator.swift */,
+				490D9D776AF84E8CD65166DAC0F6EEC7 /* Validation.swift */,
+				FAA4ED851BF5F0ADBE88B015E156F4CA /* Support Files */,
 			);
 			name = FormTextField;
 			path = FormTextField;
 			sourceTree = "<group>";
 		};
-		5276F0CC1A225E970DEEC6447F423AC0 /* Resources */ = {
+		4608C52ECBC66FDBC9B42E79824A10A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A842EC85501BAD55D08022A936D196AE /* upload-dsym.sh */,
+				F0C8068B367A316406984C07A20C83D7 /* Backtrace */,
+				C04D1E36C26E9AC884DCC78A8BC9788D /* Backtrace-PLCrashReporter */,
+				8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView */,
+				31FB42D7B4767AE8B951CCBB850BA1FD /* FormTextField */,
+				130F86DE4394AAFB62D69486F1BA4717 /* Pods-My Demo App */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -198,66 +857,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		61ECAF36A36335BE019E59C383D25B26 /* Support Files */ = {
+		61AF41CE2FBCADC045B81F3D368FD9B0 /* EasyTipView */ = {
 			isa = PBXGroup;
 			children = (
-				3CDF33B65A2B7B6143E3C9075AF07230 /* FormTextField.modulemap */,
-				DDB8C2C0A289EB5DB170F698EC0383DB /* FormTextField-dummy.m */,
-				CC5D2E23D96A94045CF5E02BBFBF01E1 /* FormTextField-Info.plist */,
-				8F1FB6C8AB648D0A6ECDDEE2C2E55C65 /* FormTextField-prefix.pch */,
-				334C25E04496F0CF48CFECB12837FBBC /* FormTextField-umbrella.h */,
-				875E04A1994EC3D3F411E86449F1950E /* FormTextField.debug.xcconfig */,
-				4B39C325BCA7689CEC6B7AB961E71979 /* FormTextField.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FormTextField";
-			sourceTree = "<group>";
-		};
-		76D2FFDAFE7687A0C2328D0539B5330F /* EasyTipView */ = {
-			isa = PBXGroup;
-			children = (
-				1556708FD7CB428672A0F27ABD176394 /* EasyTipView.swift */,
-				6B4AEA6A5EB392F8F16CF07F71EDC55E /* UIKitExtensions.swift */,
-				C27A6CF67518D5C2BCF3F815B2669D96 /* Support Files */,
+				B0E72D824C3AAF190A1F02CFDFD5C917 /* EasyTipView.swift */,
+				A54F2160F19661555C3DF72874550ED3 /* UIKitExtensions.swift */,
+				18669EDC96AB50ADF4B57DF94262F04A /* Support Files */,
 			);
 			name = EasyTipView;
 			path = EasyTipView;
 			sourceTree = "<group>";
 		};
-		8C34E57DF40BF217FAE64AB4A173E05C /* TestFairy */ = {
+		BA453D52255399125D4FEACAC9E49609 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EEA13E6F79307F3F3AE7212D7045E4FF /* TestFairy.h */,
-				5276F0CC1A225E970DEEC6447F423AC0 /* Resources */,
-				F23F4EECA04073E2FFFB3DB35E638F39 /* Support Files */,
-			);
-			name = TestFairy;
-			path = TestFairy;
-			sourceTree = "<group>";
-		};
-		BC0352A00438F2B8CCCB8C92CB13CB47 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				76D2FFDAFE7687A0C2328D0539B5330F /* EasyTipView */,
-				1BFD83EFBC79D09119BBF355A7AA559D /* FormTextField */,
-				8C34E57DF40BF217FAE64AB4A173E05C /* TestFairy */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C27A6CF67518D5C2BCF3F815B2669D96 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BC72744CCDDE366F35CD6E34806AB602 /* EasyTipView.modulemap */,
-				A85FC83D3F4D2E755DC2EF1055EF5430 /* EasyTipView-dummy.m */,
-				D8D0CA36E49E1E0B2AE8CA3C8D102C1D /* EasyTipView-Info.plist */,
-				24B6962353C655710CDFDF45B5DC8DBB /* EasyTipView-prefix.pch */,
-				63D3F9A92016C78E89CD67AC1B5F5CD5 /* EasyTipView-umbrella.h */,
-				80DD0F6343F6772BE00A16B2FFB60E9C /* EasyTipView.debug.xcconfig */,
-				E5610BFF0CDE65D0E9B583AD8D755731 /* EasyTipView.release.xcconfig */,
+				D76A2230FA79CB216826339B071BEBDB /* TestFairy.debug.xcconfig */,
+				EAE1A203310B7A6B6443ED3807B64EAF /* TestFairy.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/EasyTipView";
+			path = "../Target Support Files/TestFairy";
 			sourceTree = "<group>";
 		};
 		C3CC403571E6B06F4BF1DC96E35B4B76 /* Pods-My Demo App */ = {
@@ -278,13 +896,21 @@
 			path = "Target Support Files/Pods-My Demo App";
 			sourceTree = "<group>";
 		};
+		CDF5577DD4958B3BF4735B8B196F2A4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD08D9AD6172094FC0009FE7C17397 /* Model.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				BC0352A00438F2B8CCCB8C92CB13CB47 /* Pods */,
-				FF74947C3EABF77755BBD47156A9578A /* Products */,
+				E2F1013D4949C9087B8453B35D5011A6 /* Pods */,
+				4608C52ECBC66FDBC9B42E79824A10A7 /* Products */,
 				D7D8DDAD38028D0001EC1AE63EB2D7DA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -297,34 +923,116 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F23F4EECA04073E2FFFB3DB35E638F39 /* Support Files */ = {
+		DE5A307CD464911FE403B707FFC51EDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				06CEFF15743FA6E9081FF6435FB952CA /* TestFairy.debug.xcconfig */,
-				C5513A494CE5A2E35576B65C445F2502 /* TestFairy.release.xcconfig */,
+				6432EB7A2CCABF7CD30048F74A0BF9D8 /* upload-dsym.sh */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TestFairy";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		FF74947C3EABF77755BBD47156A9578A /* Products */ = {
+		E2F1013D4949C9087B8453B35D5011A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView */,
-				31FB42D7B4767AE8B951CCBB850BA1FD /* FormTextField */,
-				130F86DE4394AAFB62D69486F1BA4717 /* Pods-My Demo App */,
+				27EDC9550B552205DFDEAED6A53FA159 /* Backtrace */,
+				3DED1B2397EF6840D94B5D12ECE051C9 /* Backtrace-PLCrashReporter */,
+				61AF41CE2FBCADC045B81F3D368FD9B0 /* EasyTipView */,
+				4310823B446D08481D8522DCF3F32904 /* FormTextField */,
+				0D059CA6A4652E275A036B41D8547951 /* TestFairy */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAA4ED851BF5F0ADBE88B015E156F4CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8344CD34E3A8C980B4AF3C5EEA85F61E /* FormTextField.modulemap */,
+				E7C42471AB8E9EF2EEEB1BF80A50DDFE /* FormTextField-dummy.m */,
+				384927D71359E6FB26A5A147E54C8399 /* FormTextField-Info.plist */,
+				E121AB84ADEB699A675EB5CB65A1DD75 /* FormTextField-prefix.pch */,
+				0AD8E9AAA5FF5CDB654A707ADF759141 /* FormTextField-umbrella.h */,
+				88AE64E2E0000577ED979D262F2F0929 /* FormTextField.debug.xcconfig */,
+				5E7B828A562E50F2BFA4CFB9DD173887 /* FormTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FormTextField";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		27214BE751937959D9BA505078FEE5AA /* Headers */ = {
+		08884716788AE9444A80D4A6CE94A023 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF05A417F536F618EF8C8BA949B4502 /* Pods-My Demo App-umbrella.h in Headers */,
+				503F81753917E7FC87E350F7F4D16A2A /* Backtrace-PLCrashReporter-umbrella.h in Headers */,
+				246DE00F2BDE3D46C9FBE21D5F74E63E /* CrashReporter.h in Headers */,
+				4B906488F77ADFA2C90FB6137580F98B /* dwarf_opstream.hpp in Headers */,
+				3B9DBE51CCC421053A69A41F85CB313D /* dwarf_private.h in Headers */,
+				478CD1720A676CE07ED18ADA0BEAC69A /* dwarf_stack.hpp in Headers */,
+				2D6732245EE740C87D4DD4948F1AB110 /* mach_exc.h in Headers */,
+				851A7273B8888B5B7A2B10383981FF55 /* mach_exc_i386.h in Headers */,
+				D6D2EC14D8B728E001FA8DA858CFF030 /* mach_exc_x86_64.h in Headers */,
+				B14140631CC27B8DB196EBBDAFE38B86 /* PLCrashAsync.h in Headers */,
+				4AB2363440A2027432350EA8D8D824AA /* PLCrashAsyncCompactUnwindEncoding.h in Headers */,
+				A8D718CDA5F3DE895A2523604E80087D /* PLCrashAsyncDwarfCFAState.hpp in Headers */,
+				A9C6DC318DB4FF72EA7D3EF07187055A /* PLCrashAsyncDwarfCIE.hpp in Headers */,
+				BCBF545C8F13F89FFDA395724FE1F57E /* PLCrashAsyncDwarfEncoding.hpp in Headers */,
+				75464A0FCBABE10124361AC271C4CF78 /* PLCrashAsyncDwarfExpression.hpp in Headers */,
+				7D48E9E92536C34C70390D5100B95EEC /* PLCrashAsyncDwarfFDE.hpp in Headers */,
+				8DD3A0325A5B0A263A9AB03E802DC57F /* PLCrashAsyncDwarfPrimitives.hpp in Headers */,
+				ECD9C58E4E7B4970EE236232101BAD1B /* PLCrashAsyncImageList.h in Headers */,
+				309A4578B5BFAFB9E37FCBF80891C563 /* PLCrashAsyncLinkedList.hpp in Headers */,
+				5E9AF213AFBAB94FA9046D98CB4DF725 /* PLCrashAsyncMachExceptionInfo.h in Headers */,
+				D97D4F9B8F183A1005458C539AEBCA9E /* PLCrashAsyncMachOImage.h in Headers */,
+				3A51FE9C417AE2BEF364F654A6712865 /* PLCrashAsyncMachOString.h in Headers */,
+				A4D12B6D150AD1E6B400A9B67A598273 /* PLCrashAsyncMObject.h in Headers */,
+				DFF833027F80155A3B3A5566FEE90C10 /* PLCrashAsyncObjCSection.h in Headers */,
+				1D8B2BB28E54DBD5EBE0D5EB19A7DCA2 /* PLCrashAsyncSignalInfo.h in Headers */,
+				C7BE8A11E73B334194A42FC24F06011B /* PLCrashAsyncSymbolication.h in Headers */,
+				9D9856BB5BF4E9B4BFA0168D83D8E85B /* PLCrashAsyncThread.h in Headers */,
+				46BEB246EC8B5BE85F8954C59E76F8C9 /* PLCrashAsyncThread_arm.h in Headers */,
+				81C3FDB114D3FD4EFA021AF6B62A5BF7 /* PLCrashAsyncThread_current_defs.h in Headers */,
+				24504CF431C3B1847CDA09BF4D510F97 /* PLCrashAsyncThread_x86.h in Headers */,
+				BEC9EA60E201AEFC83550BF6EBD35530 /* PLCrashCompatConstants.h in Headers */,
+				474E1C14A774DE5DC80B1EF7E432EF12 /* PLCrashFeatureConfig.h in Headers */,
+				82B38DA0A612293292E740FD71C23921 /* PLCrashFrameCompactUnwind.h in Headers */,
+				23A71ED8A00C549D702DBB7B990F3B4D /* PLCrashFrameDWARFUnwind.h in Headers */,
+				75A71B20DA7252E85D32E63156757587 /* PLCrashFrameStackUnwind.h in Headers */,
+				F22FBB9C2331A01F5526C9D70FFF9A69 /* PLCrashFrameWalker.h in Headers */,
+				CC74EB3F99E5CE7453B1AAB38317586D /* PLCrashHostInfo.h in Headers */,
+				F2E355906A0DD606B345C298EDE9955C /* PLCrashLogWriter.h in Headers */,
+				491EBF36A921623DFA99F70BB1E01E17 /* PLCrashLogWriterEncoding.h in Headers */,
+				DE5B2D901B7682D634D55736CF36C93A /* PLCrashMachExceptionPort.h in Headers */,
+				008D62C8CADA64442E56F1E69FBD3E0A /* PLCrashMachExceptionPortSet.h in Headers */,
+				8B07D887814321B5190C234CF59FCF6E /* PLCrashMachExceptionServer.h in Headers */,
+				7E44E70848F3EE7EF66A70A5DA5B4469 /* PLCrashMacros.h in Headers */,
+				C91364F476B260B65A9E5171629BFE25 /* PLCrashNamespace.h in Headers */,
+				33EBD260D7786DB80CB649A974446A2C /* PLCrashProcessInfo.h in Headers */,
+				3F3FEB7EF8377ABF3D473C9BE97E6C8E /* PLCrashReport.h in Headers */,
+				67FFA22025204648746C1850BD9FB4FF /* PLCrashReport.pb-c.h in Headers */,
+				68E5CABD4A0D8A3F93F1B6082C180FDE /* PLCrashReportApplicationInfo.h in Headers */,
+				97624CC6E70B194625E77D3C9A09C98C /* PLCrashReportBinaryImageInfo.h in Headers */,
+				745F5ED2F8369BC62C01509EE41F741B /* PLCrashReporter.h in Headers */,
+				DE4900B89288531CFB9293C36B92658F /* PLCrashReporterConfig.h in Headers */,
+				8BC3780774DA7F6FBD2BC45814E9EA6E /* PLCrashReporterNSError.h in Headers */,
+				B21C925ADD9AD5B481B1A1BB6B8A7CC5 /* PLCrashReportExceptionInfo.h in Headers */,
+				09F84134375DD4E3C1328B24A828EEE1 /* PLCrashReportFormatter.h in Headers */,
+				8E90BE27356269C333066AECEBBDE87B /* PLCrashReportMachExceptionInfo.h in Headers */,
+				7F40CEFDC674C4780C65A377428BD5DC /* PLCrashReportMachineInfo.h in Headers */,
+				A1DF6393734071A23E66FF72F61CCFF5 /* PLCrashReportProcessInfo.h in Headers */,
+				9F3E9E865DB62D8EA44096EDF665B6E4 /* PLCrashReportProcessorInfo.h in Headers */,
+				9161821E176EF947C95CB45BCD337A40 /* PLCrashReportRegisterInfo.h in Headers */,
+				803AF0E7B645093EC6473915C19B175B /* PLCrashReportSignalInfo.h in Headers */,
+				EEAC1C9915E4691055302FE83053A7DC /* PLCrashReportStackFrameInfo.h in Headers */,
+				8DFD73D15F59465D1BCF015338AEBFAD /* PLCrashReportSymbolInfo.h in Headers */,
+				7E344CEEAAAC9766465A8AE982292676 /* PLCrashReportSystemInfo.h in Headers */,
+				662890EDBEFBD201BAD5158CE2E41582 /* PLCrashReportTextFormatter.h in Headers */,
+				7943C83B76D07B7316E0EFAA066C2B5B /* PLCrashReportThreadInfo.h in Headers */,
+				A59CE4D6A75C694F15C9A16C665D8257 /* PLCrashSignalHandler.h in Headers */,
+				A2C7CBEC21D019B5984480AF5E12C627 /* PLCrashSysctl.h in Headers */,
+				CC830575E79FE63F3378B1A385076845 /* PLCrashUncaughtExceptionHandler.h in Headers */,
+				B9A29E31D6445E14EAA51B922E10EB11 /* protobuf-c.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +1050,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E344296D5F4DB09A8FACA769581D644D /* EasyTipView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FDAAE77E5DD8473453700BBEF34801F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FE904786FCFEC65BAD591B72CB81B7 /* Backtrace.h in Headers */,
+				215E7C1CF00B559D3FDAF0462701D440 /* Backtrace-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D9E8F85C0CD1FB171E77CF1D2AC012 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB4AFE243AD2C374909CAB172D86D97 /* Pods-My Demo App-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,23 +1093,62 @@
 		};
 		0A7CF19F6AD74065F8EC491DC65CA9A4 /* Pods-My Demo App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEF7C5D161F56A3D44D44856D9562A29 /* Build configuration list for PBXNativeTarget "Pods-My Demo App" */;
+			buildConfigurationList = 3AFEF22A5EC1F1F8F1E1D8E0291FDBEB /* Build configuration list for PBXNativeTarget "Pods-My Demo App" */;
 			buildPhases = (
-				27214BE751937959D9BA505078FEE5AA /* Headers */,
-				A0177C866C6BA6F6012B6FDCA65B0EE8 /* Sources */,
-				89980E0E389DB8E7E9CCFAA24AE17B72 /* Frameworks */,
-				5B879BA0A0A3F2F7C082E3F2F751F9C6 /* Resources */,
+				A4D9E8F85C0CD1FB171E77CF1D2AC012 /* Headers */,
+				342BDF655EFB963811316EE2EE8CA73C /* Sources */,
+				4B55D7BEDBCA96D459578D59D01A16DD /* Frameworks */,
+				B876849BB6EB5AD8700D77E3A66B9EA8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1B04AFCBB32001E433D75EE7A2786E27 /* PBXTargetDependency */,
-				AE77BD03B8694FAB45128E5DFAB96716 /* PBXTargetDependency */,
-				CD33F459F7FF75A34C04CC493E0D92C4 /* PBXTargetDependency */,
+				F142F1FFDA640103F5E7829F3F5D39D7 /* PBXTargetDependency */,
+				A340FE6FA2986B248BA82FF951BB18F8 /* PBXTargetDependency */,
+				673315706987DF2C53EB162A178CFE40 /* PBXTargetDependency */,
+				B1D82FEAB4B9684BA6B8F0D019464F9D /* PBXTargetDependency */,
+				8982B2D9E2EBDB4CB198241397B76134 /* PBXTargetDependency */,
 			);
 			name = "Pods-My Demo App";
 			productName = Pods_My_Demo_App;
 			productReference = 130F86DE4394AAFB62D69486F1BA4717 /* Pods-My Demo App */;
+			productType = "com.apple.product-type.framework";
+		};
+		2FDE708250DF16932769A0AC8C5757D6 /* Backtrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D97ECC6B1E9DCEE8E30FB3AC4888F9B /* Build configuration list for PBXNativeTarget "Backtrace" */;
+			buildPhases = (
+				9FDAAE77E5DD8473453700BBEF34801F /* Headers */,
+				4A632ECA5F907F628C2DAE6699C67479 /* Sources */,
+				B0CBFCF0444D125FE7E14A9D3ADFD1C9 /* Frameworks */,
+				CB87D8A9EBF894963E217B6ECDB686B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12E99AAEBD2CB462D28E7DB303D099B0 /* PBXTargetDependency */,
+			);
+			name = Backtrace;
+			productName = Backtrace;
+			productReference = F0C8068B367A316406984C07A20C83D7 /* Backtrace */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF98FE971F13CD009A3E07A01EF3CAF0 /* Backtrace-PLCrashReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F946171BDBA13EE9274D8222D290A77 /* Build configuration list for PBXNativeTarget "Backtrace-PLCrashReporter" */;
+			buildPhases = (
+				08884716788AE9444A80D4A6CE94A023 /* Headers */,
+				0194462E0563D2C51F9F02721C7192B5 /* Sources */,
+				9D689D602417B3CA65EE7B5DE737F4ED /* Frameworks */,
+				CA8B7FF693122EDE2E7D741F7847DF0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Backtrace-PLCrashReporter";
+			productName = Backtrace_PLCrashReporter;
+			productReference = C04D1E36C26E9AC884DCC78A8BC9788D /* Backtrace-PLCrashReporter */;
 			productType = "com.apple.product-type.framework";
 		};
 		FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */ = {
@@ -423,10 +1187,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = FF74947C3EABF77755BBD47156A9578A /* Products */;
+			productRefGroup = 4608C52ECBC66FDBC9B42E79824A10A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2FDE708250DF16932769A0AC8C5757D6 /* Backtrace */,
+				AF98FE971F13CD009A3E07A01EF3CAF0 /* Backtrace-PLCrashReporter */,
 				048D21E3C8151CD23D428D38093E1538 /* EasyTipView */,
 				FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */,
 				0A7CF19F6AD74065F8EC491DC65CA9A4 /* Pods-My Demo App */,
@@ -436,14 +1202,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5B879BA0A0A3F2F7C082E3F2F751F9C6 /* Resources */ = {
+		8D6B9181EEC1D0D2A85D54FE1C01FEBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D6B9181EEC1D0D2A85D54FE1C01FEBE /* Resources */ = {
+		B876849BB6EB5AD8700D77E3A66B9EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8B7FF693122EDE2E7D741F7847DF0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB87D8A9EBF894963E217B6ECDB686B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,6 +1240,73 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0194462E0563D2C51F9F02721C7192B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D012242FB88D8A55D9A710608723C23 /* Backtrace-PLCrashReporter-dummy.m in Sources */,
+				0FD3F448CE214B66193397143B2A3A27 /* CrashReporter.m in Sources */,
+				F9A0180004F54A39ABB85E184A18FF3A /* dwarf_opstream.cpp in Sources */,
+				62ABA1B4AF7F5808B3636D7706F2782A /* mach_exc.c in Sources */,
+				D3A8BA0EFCFF6069AF911B169D607792 /* PLCrashAsync.c in Sources */,
+				6681D6FE9098C081259C85023840E523 /* PLCrashAsyncCompactUnwindEncoding.c in Sources */,
+				6C6D9F2F1F7CEC8974B50EAC5F70712F /* PLCrashAsyncDwarfCFAState.cpp in Sources */,
+				97A42D79BE5FAD2AE36330D2D4FCA2E5 /* PLCrashAsyncDwarfCFAStateEvaluation.cpp in Sources */,
+				20A02D4BAA7EFBC98C4091AF670D95BA /* PLCrashAsyncDwarfCIE.cpp in Sources */,
+				E7980724592E64BDAA59E04D7C5F8D46 /* PLCrashAsyncDwarfEncoding.cpp in Sources */,
+				BAA4E2CF53BFB7569FEA975C66526C6A /* PLCrashAsyncDwarfExpression.cpp in Sources */,
+				9FB2B640A16B5E762333009D3D94E5C6 /* PLCrashAsyncDwarfFDE.cpp in Sources */,
+				E426241E63F965DEAC43DFE2E3643736 /* PLCrashAsyncDwarfPrimitives.cpp in Sources */,
+				A83917E9A6A16DF513500B18C54D3493 /* PLCrashAsyncImageList.cpp in Sources */,
+				8CFE4EE5AB7E0FC9A03FC6647BAD9C93 /* PLCrashAsyncMachExceptionInfo.c in Sources */,
+				A459E6FFA17EF7E32B763B30DB2CBD10 /* PLCrashAsyncMachOImage.c in Sources */,
+				0E72B7692E419503CBB6CD8F036E6117 /* PLCrashAsyncMachOString.c in Sources */,
+				A41F6968E7076B84EDCFB84DB7308AD5 /* PLCrashAsyncMObject.c in Sources */,
+				B77798D39A804F734F6470BD491FDFEF /* PLCrashAsyncObjCSection.mm in Sources */,
+				50DA68B0AE70AE6C1230317A593BB07F /* PLCrashAsyncSignalInfo.c in Sources */,
+				7A1484B9B3E0641C83E01437838713DB /* PLCrashAsyncSymbolication.c in Sources */,
+				49FC6CF454698BF60ED84C4CB80A9ABB /* PLCrashAsyncThread.c in Sources */,
+				893B2D9DFC782054C3BA0B8BCE64A562 /* PLCrashAsyncThread_arm.c in Sources */,
+				5BCB9BB0ECB527A2E451888BC8EA1307 /* PLCrashAsyncThread_current.c in Sources */,
+				D24CA9B2B74D50C1CB29981A79E63D62 /* PLCrashAsyncThread_current.S in Sources */,
+				6CDD9CD6826049810D5786E4618DE6C2 /* PLCrashAsyncThread_x86.c in Sources */,
+				B3BD9F43CD28CAC11E3CFDEA9B73FFFB /* PLCrashFrameCompactUnwind.c in Sources */,
+				0E6ED77E4282046C3D195181845A5675 /* PLCrashFrameDWARFUnwind.cpp in Sources */,
+				804D306A1BDC07BF25A786DEB9B5F607 /* PLCrashFrameStackUnwind.c in Sources */,
+				DEB84B2770268A023D8C376B3E701CB5 /* PLCrashFrameWalker.c in Sources */,
+				F2F1BB4627F8BEF05B846A8EB79AB38A /* PLCrashHostInfo.m in Sources */,
+				A31F0F7A379AB79F0DD57F59A2005C78 /* PLCrashLogWriter.m in Sources */,
+				650C2339B49B72C8BB779B856F4A0594 /* PLCrashLogWriterEncoding.c in Sources */,
+				BF4C41F7B0AFD77DA56DCEB70F50DA63 /* PLCrashMachExceptionPort.m in Sources */,
+				648B326060EFE918341BB8D4F7F23233 /* PLCrashMachExceptionPortSet.m in Sources */,
+				3AFC1B6DECE59EC383CC4EFC7054879A /* PLCrashMachExceptionServer.m in Sources */,
+				F7346006582FEC865BDB0BC25AE883B7 /* PLCrashProcessInfo.m in Sources */,
+				0F20A65E1CDDABBC8FEE6FFB99AE1B54 /* PLCrashReport.m in Sources */,
+				024B5CFE4EB0A7D15A5349AFEB821AAB /* PLCrashReport.pb-c.c in Sources */,
+				B6951328ED0FF24D8A751D49E86B99A7 /* PLCrashReportApplicationInfo.m in Sources */,
+				A233DE5AB98AE36EE6E474B99A4544C3 /* PLCrashReportBinaryImageInfo.m in Sources */,
+				1691267DE00D1FAB3ED0B1E72380E1CE /* PLCrashReporter.m in Sources */,
+				80D8F0FB60E90778DC38465E47E3E69B /* PLCrashReporterConfig.m in Sources */,
+				5728DDE5B58407771E242CEB0BA8F3E8 /* PLCrashReporterNSError.m in Sources */,
+				77FEE595020EE40EA7D3AB3BEF6B023B /* PLCrashReportExceptionInfo.m in Sources */,
+				B4869ED14627915CE66996637A75AB71 /* PLCrashReportMachExceptionInfo.m in Sources */,
+				7068BE91D338498E38FE59EBCC2B24D6 /* PLCrashReportMachineInfo.m in Sources */,
+				EDCB4BF977631B4C946FE69868BCC895 /* PLCrashReportProcessInfo.m in Sources */,
+				2C626DE67EB3CDC9A63E547B3B5A34FB /* PLCrashReportProcessorInfo.m in Sources */,
+				F915B7C3FF08CEE9DE24B61DB99C5FAB /* PLCrashReportRegisterInfo.m in Sources */,
+				211FF14882107C3168613A2C75A4EB3D /* PLCrashReportSignalInfo.m in Sources */,
+				26009CCD295B4B1B75E745F20E9107AE /* PLCrashReportStackFrameInfo.m in Sources */,
+				1E7E65A3B6B39C20198077A87704D13F /* PLCrashReportSymbolInfo.m in Sources */,
+				E202E0E869C5732AD91A92AF38D4BF4C /* PLCrashReportSystemInfo.m in Sources */,
+				4A3345AD2522771519DA26FA7C4E9017 /* PLCrashReportTextFormatter.m in Sources */,
+				F8F7322DACD58A740C310E63FB011AD7 /* PLCrashReportThreadInfo.m in Sources */,
+				C54356A3E32348257B6AC4C31B27E1A1 /* PLCrashSignalHandler.mm in Sources */,
+				94F3D6F09FDF984BCE16D15AEDE9B160 /* PLCrashSysctl.c in Sources */,
+				EB6A9C72075A079DCAF6E1A1DBD4703E /* PLCrashUncaughtExceptionHandler.m in Sources */,
+				05335E3CEBC510CC8257E8DFDF76F6BF /* protobuf-c.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2149F177678DC152DF3DB739C8A69798 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,6 +1327,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		342BDF655EFB963811316EE2EE8CA73C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F75A527A8EE615355C0E51848FFD189 /* Pods-My Demo App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A632ECA5F907F628C2DAE6699C67479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE591DC03D40842B8D1B2E21358ABB38 /* Annotations.swift in Sources */,
+				1754A7D494EFFEAAD242567267EA7D46 /* Attachment.swift in Sources */,
+				DBDAF1E507FC7194E30BC6AAF1CEC344 /* AttachmentBookmarkHandler.swift in Sources */,
+				67991D80EE2071CD640AAD485721DA52 /* AttachmentsStorage.swift in Sources */,
+				01669AC1FFF4CF7F93C23E9E4200443B /* AttributesProvider.swift in Sources */,
+				89D9E2461C477B738C39C826608B7EA6 /* AttributesStorage.swift in Sources */,
+				8A357CB1A6DF580B9F5429B5574BE102 /* Backtrace-dummy.m in Sources */,
+				199BB6BB18A4EC98F879E4551C83DBC3 /* BacktraceApi.swift in Sources */,
+				987A0273ECA2700E49722D4B84434465 /* BacktraceApiProtocol.swift in Sources */,
+				EC709500984BFFCA18CD10473569745B /* BacktraceClient.swift in Sources */,
+				6B55001FE1CF24E18E6A3D67D8C5E12F /* BacktraceClientConfiguration.swift in Sources */,
+				3F38B1C42525C6E4C5FA68CCF2D8E4D1 /* BacktraceClientCustomizing.swift in Sources */,
+				D34DFE6FD855FCE84B010EAA3305856E /* BacktraceClientDelegate.swift in Sources */,
+				BA11FC5374B4745ABCE23F00B13B9C89 /* BacktraceCrashReporter.swift in Sources */,
+				12E7F5496507526ACAE5D71A4571BDAD /* BacktraceCredentials.swift in Sources */,
+				49E1C37AB00D29339CFABC8012E14413 /* BacktraceDatabaseSettings.swift in Sources */,
+				5669C0139CCFB36CEA53EC517FDB3002 /* BacktraceError.swift in Sources */,
+				5C552A21E990A46CED679AE09FE3E115 /* BacktraceFileManager.swift in Sources */,
+				87889C6ACB6D40158AA52A6F82FBA0E5 /* BacktraceLogger.swift in Sources */,
+				9FD7C26A1381C48BFC8582358127C53E /* BacktraceNetworkClient.swift in Sources */,
+				DB6F376269B3A12BE9D22F295A26FE68 /* BacktraceOomWatcher.swift in Sources */,
+				2F2E70A4775D69980D79A06A87A2558B /* BacktraceRateLimiter.swift in Sources */,
+				9CB0190F14A5CE0F9A8576459D799262 /* BacktraceReport.swift in Sources */,
+				05F7662A894E8DC9A4C3A8466AC1F667 /* BacktraceReporter.swift in Sources */,
+				0FD96253CEE8A86C58F19222EF2D7326 /* BacktraceReportStatus.swift in Sources */,
+				F5062222E1FAE87FF9FCD0E5CAC678F4 /* BacktraceResponse.swift in Sources */,
+				B734D9C1798A32689C21F455728F0419 /* BacktraceResult.swift in Sources */,
+				E5B6C89B1322CA6DE12BD7AB876BEF35 /* BacktraceWatcher.swift in Sources */,
+				32AAA3C6278A2581D4028E3DDF98454B /* CrashReporting.swift in Sources */,
+				38E7859B9CF47C25A276FF2DB498129D /* DebuggerChecker.swift in Sources */,
+				0C8FD979DF45798D900454C8A58F8FB9 /* DefaultAttributes.swift in Sources */,
+				E3047DF826527722F0B63A3EF9352C4E /* Dispatcher.swift in Sources */,
+				E4264B25D03C892291CB2E8B20B91FD0 /* Dispatching.swift in Sources */,
+				318350BBBB1D2B8A8BB1B68A065B17CD /* Foundation+Extensions.swift in Sources */,
+				6DC5C217A772A5988A69511BA366F3FC /* HttpMethod.swift in Sources */,
+				24BA73F307BE4874F301F7D9694B11AF /* Map+KeyPath.swift in Sources */,
+				6F249AB79F05EEEA1409E769C715891E /* Model.xcdatamodeld in Sources */,
+				46C632A1F374F694D996FB356216F0A4 /* MultipartRequest.swift in Sources */,
+				A5C2439207029CD6B2E4AE14CBC67605 /* NetworkReachability.swift in Sources */,
+				5772EF79BD627325D959ABE91150B013 /* PersistentRepository.swift in Sources */,
+				42702BB0A3EE3A5124B8F8E0963A6278 /* ReportingPolicy.swift in Sources */,
+				0E8A5695EE0C453D6A4BEF233D83BFAC /* ReportMetadataStorage.swift in Sources */,
+				A48B58DEA1221B999E5EFF46232A59B6 /* Repository.swift in Sources */,
+				E88269A45BDA6F4E7105A3468E34E9FA /* Result.swift in Sources */,
+				A1B10966180E375C4037BF3D6F2FC4A3 /* SignalContext.swift in Sources */,
+				52538296197DCFE2ECA7AF4ED95ED602 /* Store.swift in Sources */,
+				617E60DB4DC4CFB828B175729A90BDB1 /* System.swift in Sources */,
+				95F6CDDBFC7B083AAE4A95BE6C8EFE41 /* URLSession+Sync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C29ED58712A5B957601500677FF85D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,38 +1400,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0177C866C6BA6F6012B6FDCA65B0EE8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56C63BAEB93D20A948A8F1BE1838B972 /* Pods-My Demo App-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1B04AFCBB32001E433D75EE7A2786E27 /* PBXTargetDependency */ = {
+		12E99AAEBD2CB462D28E7DB303D099B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Backtrace-PLCrashReporter";
+			target = AF98FE971F13CD009A3E07A01EF3CAF0 /* Backtrace-PLCrashReporter */;
+			targetProxy = C8DBB77E8745ED1A08A68C4E0A0786EE /* PBXContainerItemProxy */;
+		};
+		673315706987DF2C53EB162A178CFE40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyTipView;
 			target = 048D21E3C8151CD23D428D38093E1538 /* EasyTipView */;
-			targetProxy = AA2EE28E218111330E68DA7DF10DE4F7 /* PBXContainerItemProxy */;
+			targetProxy = C775C65376B2808ED4F548C23F84BB94 /* PBXContainerItemProxy */;
 		};
-		AE77BD03B8694FAB45128E5DFAB96716 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FormTextField;
-			target = FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */;
-			targetProxy = B7B50257B71206EEC3E73E4733763128 /* PBXContainerItemProxy */;
-		};
-		CD33F459F7FF75A34C04CC493E0D92C4 /* PBXTargetDependency */ = {
+		8982B2D9E2EBDB4CB198241397B76134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TestFairy;
 			target = F60027FAE4C10A68998A12C22EDF64F3 /* TestFairy */;
-			targetProxy = AB292E64BDFF31D61527C2A1258C7484 /* PBXContainerItemProxy */;
+			targetProxy = 3927EFFE33279A97F89F8D56F2AFCFDA /* PBXContainerItemProxy */;
+		};
+		A340FE6FA2986B248BA82FF951BB18F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Backtrace-PLCrashReporter";
+			target = AF98FE971F13CD009A3E07A01EF3CAF0 /* Backtrace-PLCrashReporter */;
+			targetProxy = BF398E259572163DEC384BD78F7D057D /* PBXContainerItemProxy */;
+		};
+		B1D82FEAB4B9684BA6B8F0D019464F9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FormTextField;
+			target = FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */;
+			targetProxy = 1C0A4471050E50EA49F1D0F2EF593021 /* PBXContainerItemProxy */;
+		};
+		F142F1FFDA640103F5E7829F3F5D39D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Backtrace;
+			target = 2FDE708250DF16932769A0AC8C5757D6 /* Backtrace */;
+			targetProxy = 85B245A1D334A346A68087EFB2A48313 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		05BD89D5D5D6FA19C56C76E8785CBEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182F88617BB7137D042B7B18CA81501E /* Backtrace-PLCrashReporter.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Backtrace-PLCrashReporter/Backtrace-PLCrashReporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Backtrace-PLCrashReporter/Backtrace-PLCrashReporter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Backtrace-PLCrashReporter/Backtrace-PLCrashReporter.modulemap";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -590,7 +1545,7 @@
 		};
 		254A2FCD3D5C4271BE1FA7E59525523C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5513A494CE5A2E35576B65C445F2502 /* TestFairy.release.xcconfig */;
+			baseConfigurationReference = EAE1A203310B7A6B6443ED3807B64EAF /* TestFairy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -607,7 +1562,7 @@
 		};
 		25FF11868C9E16D275DDAC52EB5AB92B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5610BFF0CDE65D0E9B583AD8D755731 /* EasyTipView.release.xcconfig */;
+			baseConfigurationReference = 217ED2F97EBEFA170ABD51599F1C89BA /* EasyTipView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -641,7 +1596,42 @@
 			};
 			name = Release;
 		};
-		37700282DEA1D08B925A84B04317EC35 /* Release */ = {
+		3C823A8B3CD48784A0CA28EC390FA292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53DABCE15A75B41EB5ADE0E70A7D6D9 /* EasyTipView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EasyTipView/EasyTipView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyTipView/EasyTipView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EasyTipView/EasyTipView.modulemap";
+				PRODUCT_MODULE_NAME = EasyTipView;
+				PRODUCT_NAME = EasyTipView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50A355D6A7DD8E33572D9D8DC236BFFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9375FF332035949149144CAED1DF673 /* Pods-My Demo App.release.xcconfig */;
 			buildSettings = {
@@ -679,44 +1669,9 @@
 			};
 			name = Release;
 		};
-		3C823A8B3CD48784A0CA28EC390FA292 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80DD0F6343F6772BE00A16B2FFB60E9C /* EasyTipView.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EasyTipView/EasyTipView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyTipView/EasyTipView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EasyTipView/EasyTipView.modulemap";
-				PRODUCT_MODULE_NAME = EasyTipView;
-				PRODUCT_NAME = EasyTipView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		6A517093209A56570E33F9E5DB8F9712 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B39C325BCA7689CEC6B7AB961E71979 /* FormTextField.release.xcconfig */;
+			baseConfigurationReference = 5E7B828A562E50F2BFA4CFB9DD173887 /* FormTextField.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -750,9 +1705,46 @@
 			};
 			name = Release;
 		};
+		77EDC78C4252B813E82A05533EC32176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8052A9C932B42F33F3B866326F807CEF /* Pods-My Demo App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-My Demo App/Pods-My Demo App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-My Demo App/Pods-My Demo App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7EA9A9A1DC785863F9ACCD0DC31AA3E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 875E04A1994EC3D3F411E86449F1950E /* FormTextField.debug.xcconfig */;
+			baseConfigurationReference = 88AE64E2E0000577ED979D262F2F0929 /* FormTextField.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -779,6 +1771,41 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		895AA413C41D702056D2476F5BA3515B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9467266830E0B8BC94A6E787CEA96ED4 /* Backtrace.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Backtrace/Backtrace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Backtrace/Backtrace-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Backtrace/Backtrace.modulemap";
+				PRODUCT_MODULE_NAME = Backtrace;
+				PRODUCT_NAME = Backtrace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -847,11 +1874,10 @@
 			};
 			name = Release;
 		};
-		B94CBC77208FA5B86D2B63309144D0DA /* Debug */ = {
+		9308375CFCCF2A4C80570014E0E00798 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8052A9C932B42F33F3B866326F807CEF /* Pods-My Demo App.debug.xcconfig */;
+			baseConfigurationReference = 84B44BD3B9F69AAD620A2F42E7EA2CCB /* Backtrace-PLCrashReporter.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -861,32 +1887,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-My Demo App/Pods-My Demo App-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Backtrace-PLCrashReporter/Backtrace-PLCrashReporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Backtrace-PLCrashReporter/Backtrace-PLCrashReporter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-My Demo App/Pods-My Demo App.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Backtrace-PLCrashReporter/Backtrace-PLCrashReporter.modulemap";
+				PRODUCT_MODULE_NAME = Backtrace_PLCrashReporter;
+				PRODUCT_NAME = Backtrace_PLCrashReporter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		DB7E8863071F522E6F6AC7B22E44475B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06CEFF15743FA6E9081FF6435FB952CA /* TestFairy.debug.xcconfig */;
+			baseConfigurationReference = D76A2230FA79CB216826339B071BEBDB /* TestFairy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -900,6 +1926,42 @@
 			};
 			name = Debug;
 		};
+		FB851BC8671605B0F3FF13ED590C8DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7BF038361BB8E2A37238012CB88883 /* Backtrace.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Backtrace/Backtrace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Backtrace/Backtrace-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Backtrace/Backtrace.modulemap";
+				PRODUCT_MODULE_NAME = Backtrace;
+				PRODUCT_NAME = Backtrace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -908,6 +1970,15 @@
 			buildConfigurations = (
 				DB7E8863071F522E6F6AC7B22E44475B /* Debug */,
 				254A2FCD3D5C4271BE1FA7E59525523C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AFEF22A5EC1F1F8F1E1D8E0291FDBEB /* Build configuration list for PBXNativeTarget "Pods-My Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EDC78C4252B813E82A05533EC32176 /* Debug */,
+				50A355D6A7DD8E33572D9D8DC236BFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -921,11 +1992,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4F946171BDBA13EE9274D8222D290A77 /* Build configuration list for PBXNativeTarget "Backtrace-PLCrashReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BD89D5D5D6FA19C56C76E8785CBEE5 /* Debug */,
+				9308375CFCCF2A4C80570014E0E00798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6B2DAEC38B1D5BB734E7DF77F6E6B63C /* Build configuration list for PBXNativeTarget "EasyTipView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3C823A8B3CD48784A0CA28EC390FA292 /* Debug */,
 				25FF11868C9E16D275DDAC52EB5AB92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D97ECC6B1E9DCEE8E30FB3AC4888F9B /* Build configuration list for PBXNativeTarget "Backtrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895AA413C41D702056D2476F5BA3515B /* Debug */,
+				FB851BC8671605B0F3FF13ED590C8DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -939,16 +2028,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEF7C5D161F56A3D44D44856D9562A29 /* Build configuration list for PBXNativeTarget "Pods-My Demo App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B94CBC77208FA5B86D2B63309144D0DA /* Debug */,
-				37700282DEA1D08B925A84B04317EC35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFCD08D9AD6172094FC0009FE7C17397 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				619663C3779E44B160F9A1591C62DD6B /* Model.xcdatamodel */,
+			);
+			name = Model.xcdatamodeld;
+			path = Sources/Features/Resources/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

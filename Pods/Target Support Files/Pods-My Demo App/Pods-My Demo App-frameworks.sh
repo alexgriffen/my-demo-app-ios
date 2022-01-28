@@ -176,10 +176,14 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Backtrace/Backtrace.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Backtrace-PLCrashReporter/Backtrace_PLCrashReporter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FormTextField/FormTextField.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Backtrace/Backtrace.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Backtrace-PLCrashReporter/Backtrace_PLCrashReporter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FormTextField/FormTextField.framework"
 fi

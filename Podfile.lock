@@ -1,24 +1,32 @@
 PODS:
+  - Backtrace (1.7.1):
+    - Backtrace-PLCrashReporter
+  - Backtrace-PLCrashReporter (1.5.4)
   - EasyTipView (2.1.0)
   - FormTextField (3.1.0)
   - TestFairy (1.29.4)
 
 DEPENDENCIES:
+  - Backtrace
   - EasyTipView
   - FormTextField
   - TestFairy
 
 SPEC REPOS:
   trunk:
+    - Backtrace
+    - Backtrace-PLCrashReporter
     - EasyTipView
     - FormTextField
     - TestFairy
 
 SPEC CHECKSUMS:
+  Backtrace: 950ea8d861a84c527bb7c0a5adf64b887d95ffaf
+  Backtrace-PLCrashReporter: 65b9aae5468bb6af6b55b88de22b49e031331054
   EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
   FormTextField: 229e496b8dae002c5062ea5e961e2140528782e2
   TestFairy: 5d22ecca80d98cb67d27bd0ad5bb0081218e8d02
 
-PODFILE CHECKSUM: 7569f0fcae3ad83783f4ffe3779f5ea338b96959
+PODFILE CHECKSUM: 756bd3351fa3f1b837705e73b7a4522489c17f23
 
 COCOAPODS: 1.11.2
