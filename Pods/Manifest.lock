@@ -7,18 +7,27 @@ PODS:
   - TestFairy (1.29.4)
 
 DEPENDENCIES:
-  - Backtrace
+  - Backtrace (from `https://github.com/backtrace-labs/backtrace-cocoa.git`, branch `feature/errorFreeMetrics`)
   - EasyTipView
   - FormTextField
   - TestFairy
 
 SPEC REPOS:
   trunk:
-    - Backtrace
     - Backtrace-PLCrashReporter
     - EasyTipView
     - FormTextField
     - TestFairy
+
+EXTERNAL SOURCES:
+  Backtrace:
+    :branch: feature/errorFreeMetrics
+    :git: https://github.com/backtrace-labs/backtrace-cocoa.git
+
+CHECKOUT OPTIONS:
+  Backtrace:
+    :commit: 7737719a03541009492026499fbf19753575f558
+    :git: https://github.com/backtrace-labs/backtrace-cocoa.git
 
 SPEC CHECKSUMS:
   Backtrace: 950ea8d861a84c527bb7c0a5adf64b887d95ffaf
@@ -27,6 +36,6 @@ SPEC CHECKSUMS:
   FormTextField: 229e496b8dae002c5062ea5e961e2140528782e2
   TestFairy: 5d22ecca80d98cb67d27bd0ad5bb0081218e8d02
 
-PODFILE CHECKSUM: 756bd3351fa3f1b837705e73b7a4522489c17f23
+PODFILE CHECKSUM: f19152586a7a23d7a53b682a972f18b2dd649bc9
 
 COCOAPODS: 1.11.2

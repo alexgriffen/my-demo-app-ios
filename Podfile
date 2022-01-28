@@ -10,6 +10,6 @@ target 'My Demo App' do
   pod 'TestFairy'
   pod 'FormTextField'
   pod 'EasyTipView'
-  pod 'Backtrace'
+  pod 'Backtrace', :git => 'https://github.com/backtrace-labs/backtrace-cocoa.git', :branch => 'feature/errorFreeMetrics'
 
 end
